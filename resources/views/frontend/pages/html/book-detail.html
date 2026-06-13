@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">تفاصيل الكتاب | جامعة المستقبل</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800&family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="book-detail-page">
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4 align-items-center">
+                <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@futureuniversity.edu</span>
+                <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+966 11 234 5678</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <a href="#" class="top-bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-nav glass-nav py-1">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html">
+                <i class="fas fa-university me-2" style="color: var(--accent-color);"></i>
+                <span class="ms-2">جامعة</span><span style="color: var(--accent-color);">المستقبل</span>
+            </a>
+            <button class="navbar-toggler btn-glass border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-0">
+                    <li class="nav-item"><a class="nav-link ps-3" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">عن الجامعة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="colleges.html">الكليات</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="admission.html">القبول</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="research.html">البحث العلمي</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="library.html">المكتبة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="news.html">الأخبار</a></li>
+                    <li class="nav-item"><a class="nav-link ps-3" href="contact.html">تواصل</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 me-lg-4">
+                    <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button>
+                    <div class="dropdown portal-dropdown">
+                        <button class="btn btn-glass btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-graduate me-1"></i> بوابة الطلاب
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end portal-menu">
+                            <li><a class="dropdown-item" href="courses.html"><i class="fas fa-book-open me-2"></i>المقررات</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2"></i>تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus me-2"></i>التسجيل</a></li>
+                        </ul>
+                    </div>
+                    <a href="admission.html" class="btn btn-accent btn-sm px-4">قدم الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="bookDetailContent"></main>
+
+        <footer class="site-footer">
+        <div class="site-footer__top">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="site-footer__brand">
+                            <span class="site-footer__brand-icon"><i class="fas fa-university"></i></span>
+                            <span class="site-footer__brand-name">جامعة<span>المستقبل</span></span>
+                        </a>
+                        <p class="site-footer__desc">جامعة رائدة تسعى لتقديم تعليم عالي الجودة وبحث علمي متميز، لإعداد كوادر مؤهلة تقود مسيرة التنمية في المملكة.</p>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="site-footer__heading">روابط سريعة</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">عن الجامعة</a></li>
+                            <li><a href="colleges.html">الكليات</a></li>
+                            <li><a href="admission.html">القبول</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                            <li><a href="terms.html">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">خدمات</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="scholarships.html">المنح الدراسية</a></li>
+                            <li><a href="tuition-fees.html">الرسوم الدراسية</a></li>
+                            <li><a href="student-services.html">خدمات الطلاب</a></li>
+                            <li><a href="academic-calendar.html">التقويم الأكاديمي</a></li>
+                            <li><a href="events.html">الفعاليات</a></li>
+                            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                            <li><a href="faculty.html">هيئة التدريس</a></li>
+                            <li><a href="research.html">البحث العلمي</a></li>
+                            <li><a href="library.html">المكتبة</a></li>
+                            <li><a href="news.html">الأخبار</a></li>
+                            <li><a href="courses.html">بوابة الطلاب</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">تواصل معنا</h6>
+                        <ul class="site-footer__contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                            <li><i class="fas fa-phone"></i><span class="en-text" dir="ltr">+966 11 234 5678</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@futureuniversity.edu</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-inner">
+                    <p class="site-footer__copy">&copy; 2026 جامعة المستقبل. جميع الحقوق محفوظة.</p>
+                    <div class="site-footer__legal">
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="terms.html">الشروط والأحكام</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="contact.html">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/uni-main.js"></script>
+    <script>
+        const booksDB = {
+            1: {
+                title: 'أساسيات الهندسة المدنية',
+                author: 'د. خالد العمري',
+                category: 'engineering',
+                categoryLabel: 'الهندسة',
+                icon: 'fa-gears',
+                color: '#0F172A',
+                isbn: '978-603-8234-01-2',
+                publisher: 'دار النشر الأكاديمي',
+                year: '2024',
+                edition: 'الطبعة الثالثة',
+                pages: 520,
+                language: 'العربية',
+                rating: 4.5,
+                available: true,
+                copies: 8,
+                copiesAvailable: 3,
+                location: 'الرف A3 - الطابق الثاني',
+                description: 'كتاب شامل يغطي أساسيات الهندسة المدنية بما في ذلك ميكانيكا المواد، تحليل الإنشاءات، هندسة الأساسات، وتصميم الخرسانة المسلحة. يُعد مرجعاً أساسياً لطلاب الهندسة المدنية في مراحل البكالوريوس.',
+                chapters: ['مقدمة في الهندسة المدنية', 'ميكانيكا المواد', 'تحليل الإنشاءات', 'هندسة الأساسات', 'تصميم الخرسانة المسلحة', 'هندسة الطرق', 'إدارة المشاريع الهندسية', 'السلامة المهنية'],
+                tags: ['هندسة مدنية', 'إنشاءات', 'خرسانة', 'أساسات']
+            },
+            2: {
+                title: 'التشريح البشري المتقدم',
+                author: 'أ.د. خالد الدوسري',
+                category: 'medicine',
+                categoryLabel: 'الطب',
+                icon: 'fa-stethoscope',
+                color: '#dc2626',
+                isbn: '978-603-8234-02-9',
+                publisher: 'الدار الطبية الدولية',
+                year: '2023',
+                edition: 'الطبعة الخامسة',
+                pages: 890,
+                language: 'العربية',
+                rating: 4.8,
+                available: true,
+                copies: 12,
+                copiesAvailable: 5,
+                location: 'الرف B1 - الطابق الثاني',
+                description: 'مرجع طبي شامل في التشريح البشري يتضمن رسومات توضيحية مفصلة وصور ثلاثية الأبعاد. يغطي جميع أجهزة الجسم مع التركيز على التطبيقات السريرية.',
+                chapters: ['الجهاز الهيكلي', 'الجهاز العضلي', 'الجهاز العصبي', 'الجهاز القلبي الوعائي', 'الجهاز التنفسي', 'الجهاز الهضمي', 'الجهاز البولي', 'الجهاز التناسلي'],
+                tags: ['تشريح', 'طب', 'علوم طبية', 'سريري']
+            },
+            3: {
+                title: 'البرمجة بلغة Python',
+                author: 'د. سارة الشمري',
+                category: 'cs',
+                categoryLabel: 'علوم الحاسب',
+                icon: 'fa-code',
+                color: '#059669',
+                isbn: '978-603-8234-03-6',
+                publisher: 'دار التقنية للنشر',
+                year: '2025',
+                edition: 'الطبعة الثانية',
+                pages: 450,
+                language: 'العربية',
+                rating: 4.3,
+                available: true,
+                copies: 15,
+                copiesAvailable: 7,
+                location: 'الرف C2 - الطابق الأول',
+                description: 'دليل شامل لتعلم البرمجة بلغة Python من الصفر حتى الاحتراف. يتضمن أمثلة عملية ومشاريع تطبيقية في مجالات تحليل البيانات والذكاء الاصطناعي.',
+                chapters: ['مقدمة في Python', 'المتغيرات وأنواع البيانات', 'التحكم في التدفق', 'الدوال', 'البرمجة كائنية التوجه', 'التعامل مع الملفات', 'تحليل البيانات', 'مقدمة في الذكاء الاصطناعي'],
+                tags: ['برمجة', 'Python', 'تحليل بيانات', 'ذكاء اصطناعي']
+            },
+            4: {
+                title: 'مبادئ إدارة الأعمال',
+                author: 'أ.د. أحمد الحربي',
+                category: 'business',
+                categoryLabel: 'إدارة الأعمال',
+                icon: 'fa-chart-line',
+                color: '#d97706',
+                isbn: '978-603-8234-04-3',
+                publisher: 'دار الأعمال للنشر',
+                year: '2024',
+                edition: 'الطبعة الرابعة',
+                pages: 380,
+                language: 'العربية',
+                rating: 4.1,
+                available: true,
+                copies: 10,
+                copiesAvailable: 4,
+                location: 'الرف D1 - الطابق الأول',
+                description: 'كتاب تمهيدي يغطي المبادئ الأساسية لإدارة الأعمال بما في ذلك التخطيط والتنظيم والقيادة والرقابة. يتضمن دراسات حالة من واقع الشركات السعودية.',
+                chapters: ['مقدمة في الإدارة', 'التخطيط الاستراتيجي', 'التنظيم الهيكلي', 'القيادة وتحفيز الموظفين', 'اتخاذ القرار', 'الرقابة والتقييم', 'ريادة الأعمال', 'إدارة التغيير'],
+                tags: ['إدارة', 'أعمال', 'قيادة', 'ريادة أعمال']
+            },
+            5: {
+                title: 'الفيزياء العامة',
+                author: 'أ.د. فهد المطيري',
+                category: 'science',
+                categoryLabel: 'العلوم',
+                icon: 'fa-atom',
+                color: '#7c3aed',
+                isbn: '978-603-8234-05-0',
+                publisher: 'دار العلوم للنشر',
+                year: '2023',
+                edition: 'الطبعة السادسة',
+                pages: 650,
+                language: 'العربية',
+                rating: 4.6,
+                available: true,
+                copies: 9,
+                copiesAvailable: 2,
+                location: 'الرف E2 - الطابق الأول',
+                description: 'مرجع أساسي في الفيزياء العامة يغطي الميكانيكا والحرارة والكهرومغناطيسية والبصريات والفيزياء الحديثة. يتضمن مسائل محلولة وتمارين تطبيقية.',
+                chapters: ['الميكانيكا الكلاسيكية', 'الديناميكا الحرارية', 'الكهرومغناطيسية', 'البصريات', 'الفيزياء الحديثة', 'ميكانيكا الكم', 'النسبية', 'الفيزياء النووية'],
+                tags: ['فيزياء', 'علوم', 'ميكانيكا', 'كهرومغناطيسية']
+            },
+            6: {
+                title: 'القانون الدولي العام',
+                author: 'أ.د. سلطان الرشيدي',
+                category: 'law',
+                categoryLabel: 'القانون',
+                icon: 'fa-scale-balanced',
+                color: '#0891b2',
+                isbn: '978-603-8234-06-7',
+                publisher: 'دار القانون للنشر',
+                year: '2024',
+                edition: 'الطبعة الثانية',
+                pages: 420,
+                language: 'العربية',
+                rating: 4.2,
+                available: false,
+                copies: 6,
+                copiesAvailable: 0,
+                location: 'الرف F1 - الطابق الثالث',
+                description: 'دراسة شاملة للقانون الدولي العام تتضمن مصادر القانون الدولي والأشخاص الدولية والمعاهدات والمسؤولية الدولية وتسوية المنازعات.',
+                chapters: ['مصادر القانون الدولي', 'أشخاص القانون الدولي', 'المعاهدات الدولية', 'المسؤولية الدولية', 'تسوية المنازعات', 'القانون الدولي الإنساني', 'قانون البحار', 'المنظمات الدولية'],
+                tags: ['قانون دولي', 'معاهدات', 'منازعات', 'منظمات دولية']
+            },
+            7: {
+                title: 'مناهج البحث في التربية',
+                author: 'د. هند السبيعي',
+                category: 'education',
+                categoryLabel: 'التربية',
+                icon: 'fa-chalkboard-user',
+                color: '#be185d',
+                isbn: '978-603-8234-07-4',
+                publisher: 'دار التربية الحديثة',
+                year: '2025',
+                edition: 'الطبعة الأولى',
+                pages: 340,
+                language: 'العربية',
+                rating: 4.0,
+                available: true,
+                copies: 7,
+                copiesAvailable: 5,
+                location: 'الرف G3 - الطابق الثالث',
+                description: 'دليل شامل لمناهج البحث العلمي في التربية والتعليم. يغطي البحث الكمي والنوعي وإعداد الرسائل العلمية وأدوات جمع البيانات.',
+                chapters: ['مقدمة في البحث العلمي', 'مناهج البحث الكمي', 'مناهج البحث النوعي', 'أدوات جمع البيانات', 'تحليل البيانات', 'إعداد الرسالة العلمية', 'أخلاقيات البحث', 'نشر البحوث'],
+                tags: ['بحث علمي', 'تربية', 'مناهج', 'رسائل علمية']
+            },
+            8: {
+                title: 'الذكاء الاصطناعي: المفاهيم والتطبيقات',
+                author: 'أ.د. محمد العتيبي',
+                category: 'cs',
+                categoryLabel: 'علوم الحاسب',
+                icon: 'fa-robot',
+                color: '#0EA5E9',
+                isbn: '978-603-8234-08-1',
+                publisher: 'دار التقنية للنشر',
+                year: '2025',
+                edition: 'الطبعة الأولى',
+                pages: 580,
+                language: 'العربية',
+                rating: 4.9,
+                available: true,
+                copies: 20,
+                copiesAvailable: 8,
+                location: 'الرف C1 - الطابق الأول',
+                description: 'كتاب رائد يغطي أحدث مفاهيم الذكاء الاصطناعي وتطبيقاته العملية. يتضمن فصولاً عن تعلم الآلة والتعلم العميق ومعالجة اللغات الطبيعية والرؤية الحاسوبية.',
+                chapters: ['مقدمة في الذكاء الاصطناعي', 'تعلم الآلة', 'التعلم العميق', 'معالجة اللغات الطبيعية', 'الرؤية الحاسوبية', 'الشبكات العصبية', 'الذكاء الاصطناعي التوليدي', 'أخلاقيات الذكاء الاصطناعي'],
+                tags: ['ذكاء اصطناعي', 'تعلم آلة', 'تعلم عميق', 'NLP']
+            },
+            9: {
+                title: 'الصيدلة السريرية',
+                author: 'د. منال العنزي',
+                category: 'medicine',
+                categoryLabel: 'الطب',
+                icon: 'fa-pills',
+                color: '#059669',
+                isbn: '978-603-8234-09-8',
+                publisher: 'الدار الطبية الدولية',
+                year: '2024',
+                edition: 'الطبعة الثالثة',
+                pages: 720,
+                language: 'العربية',
+                rating: 4.4,
+                available: true,
+                copies: 8,
+                copiesAvailable: 1,
+                location: 'الرف B2 - الطابق الثاني',
+                description: 'مرجع متخصص في الصيدلة السريرية يغطي التفاعلات الدوائية والجرعات العلاجية والرعاية الصيدلانية للمرضى في مختلف التخصصات الطبية.',
+                chapters: ['مقدمة في الصيدلة السريرية', 'علم الأدوية', 'التفاعلات الدوائية', 'الجرعات العلاجية', 'رعاية مرضى القلب', 'رعاية مرضى السكري', 'رعاية الأطفال', 'رعاية المسنين'],
+                tags: ['صيدلة', 'سريري', 'أدوية', 'رعاية صحية']
+            },
+            10: {
+                title: 'هندسة البرمجيات المتقدمة',
+                author: 'د. فهد العنزي',
+                category: 'cs',
+                categoryLabel: 'علوم الحاسب',
+                icon: 'fa-laptop-code',
+                color: '#1E293B',
+                isbn: '978-603-8234-10-4',
+                publisher: 'دار التقنية للنشر',
+                year: '2024',
+                edition: 'الطبعة الثانية',
+                pages: 490,
+                language: 'العربية',
+                rating: 4.3,
+                available: true,
+                copies: 11,
+                copiesAvailable: 6,
+                location: 'الرف C3 - الطابق الأول',
+                description: 'كتاب متقدم في هندسة البرمجيات يغطي منهجيات التطوير الحديثة وإدارة المشاريع البرمجية واختبار البرمجيات ونمذجة الأنظمة.',
+                chapters: ['مقدمة في هندسة البرمجيات', 'متطلبات النظام', 'التصميم المعماري', 'البرمجة المتقدمة', 'اختبار البرمجيات', 'إدارة المشاريع', 'DevOps', 'الأمن السيبراني'],
+                tags: ['برمجيات', 'تطوير', 'إدارة مشاريع', 'اختبار']
+            },
+            11: {
+                title: 'التصميم المعماري المستدام',
+                author: 'د. نورة القحطاني',
+                category: 'engineering',
+                categoryLabel: 'الهندسة',
+                icon: 'fa-building',
+                color: '#16a34a',
+                isbn: '978-603-8234-11-1',
+                publisher: 'دار العمارة للنشر',
+                year: '2023',
+                edition: 'الطبعة الأولى',
+                pages: 360,
+                language: 'العربية',
+                rating: 4.5,
+                available: true,
+                copies: 6,
+                copiesAvailable: 2,
+                location: 'الرف A1 - الطابق الثاني',
+                description: 'كتاب متخصص في التصميم المعماري المستدام يغطي مفاهيم البناء الأخضر والمواد المستدامة وكفاءة الطاقة والتصميم البيئي.',
+                chapters: ['مبادئ الاستدامة', 'البناء الأخضر', 'كفاءة الطاقة', 'المواد المستدامة', 'التصميم البيئي', 'المياه وإدارتها', 'جودة البيئة الداخلية', 'شهادات الاستدامة'],
+                tags: ['عمارة', 'استدامة', 'بناء أخضر', 'طاقة']
+            },
+            12: {
+                title: 'المحاسبة المالية المتقدمة',
+                author: 'د. خالد المطيري',
+                category: 'business',
+                categoryLabel: 'إدارة الأعمال',
+                icon: 'fa-calculator',
+                color: '#ca8a04',
+                isbn: '978-603-8234-12-8',
+                publisher: 'دار الأعمال للنشر',
+                year: '2024',
+                edition: 'الطبعة الرابعة',
+                pages: 540,
+                language: 'العربية',
+                rating: 4.2,
+                available: true,
+                copies: 9,
+                copiesAvailable: 4,
+                location: 'الرف D2 - الطابق الأول',
+                description: 'مرجع شامل في المحاسبة المالية المتقدمة يغطي المعايير الدولية لإعداد التقارير المالية IFRS والمحاسبة عن الشركات والقوائم المالية.',
+                chapters: ['المعايير الدولية IFRS', 'القوائم المالية', 'محاسبة الشركات', 'الاستثمارات', 'العقود طويلة الأجل', 'محاسبة الضرائب', 'التدقيق المالي', 'التحليل المالي'],
+                tags: ['محاسبة', 'مالية', 'IFRS', 'تدقيق']
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const bookId = parseInt(params.get('id')) || 1;
+            const book = booksDB[bookId];
+
+            if (!book) {
+                document.getElementById('bookDetailContent').innerHTML = `
+                    <section class="page-hero">
+                        <div class="container">
+                            <div class="page-hero-content">
+                                <div class="page-hero-icon"><i class="fas fa-book"></i></div>
+                                <h1 class="page-hero-title">الكتاب غير موجود</h1>
+                                <p class="page-hero-subtitle">عذراً، لم يتم العثور على الكتاب المطلوب</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="container py-5 text-center">
+                        <a href="library.html" class="btn btn-accent px-5">العودة للمكتبة</a>
+                    </div>`;
+                return;
+            }
+
+            document.getElementById('pageTitle').textContent = book.title + ' | جامعة المستقبل';
+
+            const starsHTML = Array.from({length: 5}, (_, i) => {
+                const filled = i < Math.floor(book.rating);
+                const half = !filled && i < book.rating;
+                return `<i class="fas fa-star ${filled ? '' : 'empty'}"></i>`;
+            }).join('');
+
+            const chaptersHTML = book.chapters.map((ch, i) => `
+                <div class="book-detail-chapter">
+                    <span class="book-detail-chapter__num">${i + 1}</span>
+                    <span class="book-detail-chapter__title">${ch}</span>
+                </div>`).join('');
+
+            const tagsHTML = book.tags.map(t => `<span class="book-detail-tag">${t}</span>`).join('');
+
+            const availabilityHTML = book.available
+                ? `<span class="availability-badge available"><i class="fas fa-check-circle"></i>متوفر (${book.copiesAvailable} من ${book.copies})</span>`
+                : `<span class="availability-badge unavailable"><i class="fas fa-times-circle"></i>غير متوفر حالياً</span>`;
+
+            const relatedIds = Object.keys(booksDB).filter(id => {
+                const b = booksDB[id];
+                return b.category === book.category && parseInt(id) !== bookId;
+            }).slice(0, 4);
+
+            const relatedHTML = relatedIds.length
+                ? relatedIds.map(id => {
+                const rb = booksDB[id];
+                return `
+                    <a href="book-detail.html?id=${id}" class="book-detail-related__item">
+                        <div class="book-detail-related__thumb" style="background-color: ${rb.color};">
+                            <i class="fas ${rb.icon}"></i>
+                        </div>
+                        <div>
+                            <div class="book-detail-related__title">${rb.title}</div>
+                            <div class="book-detail-related__author">${rb.author}</div>
+                        </div>
+                    </a>`;
+            }).join('')
+                : '<p class="text-secondary small mb-0">لا توجد كتب ذات صلة حالياً.</p>';
+
+            const infoRows = [
+                ['الناشر', book.publisher],
+                ['الطبعة', book.edition],
+                ['عدد الصفحات', book.pages],
+                ['اللغة', book.language],
+                ['ISBN', book.isbn, 'en-text'],
+                ['الموقع', book.location],
+                ['التصنيف', book.categoryLabel]
+            ].map(([label, value, cls]) => `
+                <div class="book-detail-info-row">
+                    <span class="book-detail-info-row__label">${label}</span>
+                    <span class="book-detail-info-row__value ${cls || ''}">${value}</span>
+                </div>`).join('');
+
+            const html = `
+                <section class="page-hero">
+                    <div class="container">
+                        <div class="page-hero-content">
+                            <div class="page-hero-icon"><i class="fas fa-book-open"></i></div>
+                            <h1 class="page-hero-title">${book.title}</h1>
+                            <p class="page-hero-subtitle"><i class="fas fa-user-pen ms-1"></i> ${book.author}</p>
+                            <div class="page-hero-breadcrumb">
+                                <a href="index.html">الرئيسية</a>
+                                <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                                <a href="library.html">المكتبة</a>
+                                <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                                <span class="current">${book.categoryLabel}</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="book-detail-highlights section-fade-up">
+                    <div class="container">
+                        <div class="book-detail-highlights__grid">
+                            <div class="book-detail-highlight">
+                                <span class="book-detail-highlight__icon"><i class="fas fa-file-lines"></i></span>
+                                <div>
+                                    <strong class="book-detail-highlight__value en-text">${book.pages}</strong>
+                                    <span class="book-detail-highlight__label">صفحة</span>
+                                </div>
+                            </div>
+                            <div class="book-detail-highlight">
+                                <span class="book-detail-highlight__icon"><i class="fas fa-calendar"></i></span>
+                                <div>
+                                    <strong class="book-detail-highlight__value en-text">${book.year}</strong>
+                                    <span class="book-detail-highlight__label">سنة النشر</span>
+                                </div>
+                            </div>
+                            <div class="book-detail-highlight">
+                                <span class="book-detail-highlight__icon"><i class="fas fa-star"></i></span>
+                                <div>
+                                    <strong class="book-detail-highlight__value en-text">${book.rating}/5</strong>
+                                    <span class="book-detail-highlight__label">التقييم</span>
+                                </div>
+                            </div>
+                            <div class="book-detail-highlight">
+                                <span class="book-detail-highlight__icon"><i class="fas fa-${book.available ? 'check-circle' : 'times-circle'}"></i></span>
+                                <div>
+                                    <strong class="book-detail-highlight__value">${book.available ? 'متوفر' : 'غير متوفر'}</strong>
+                                    <span class="book-detail-highlight__label">${book.available ? book.copiesAvailable + ' من ' + book.copies + ' نسخة' : 'جميع النسخ محجوزة'}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="book-detail-section">
+                    <div class="container">
+                        <div class="row g-4 g-xl-5">
+                            <div class="col-lg-8">
+                                <div class="book-detail-panel section-fade-up">
+                                    <h3 class="book-detail-panel__title"><i class="fas fa-info-circle ms-2"></i>وصف الكتاب</h3>
+                                    <p class="text-secondary mb-0" style="line-height: 1.9;">${book.description}</p>
+                                </div>
+
+                                <div class="book-detail-panel section-fade-up">
+                                    <h3 class="book-detail-panel__title"><i class="fas fa-list-ol ms-2"></i>فهرس المحتويات</h3>
+                                    <div class="book-detail-chapters">${chaptersHTML}</div>
+                                </div>
+
+                                <div class="book-detail-panel section-fade-up">
+                                    <h3 class="book-detail-panel__title"><i class="fas fa-tags ms-2"></i>الوسوم</h3>
+                                    <div class="d-flex flex-wrap gap-2">${tagsHTML}</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="book-detail-sidebar">
+                                    <div class="book-detail-panel section-fade-up">
+                                        <div class="book-detail-cover" style="background-color: ${book.color};">
+                                            <i class="fas ${book.icon}"></i>
+                                        </div>
+                                        <div class="book-detail-rating">
+                                            <div class="book-detail-rating__stars">${starsHTML}</div>
+                                            <span class="book-detail-rating__score en-text">${book.rating}/5</span>
+                                        </div>
+                                        <div class="text-center mb-0">${availabilityHTML}</div>
+                                    </div>
+
+                                    <div class="book-detail-panel section-fade-up">
+                                        <h3 class="book-detail-panel__title"><i class="fas fa-circle-info ms-2"></i>معلومات الكتاب</h3>
+                                        ${infoRows}
+                                    </div>
+
+                                    <div class="book-detail-panel book-detail-reserve section-fade-up">
+                                        <i class="fas fa-hand-holding-heart fa-2x mb-3"></i>
+                                        <h5 class="book-detail-reserve__title">حجز الكتاب</h5>
+                                        <p class="book-detail-reserve__desc">يمكنك حجز هذا الكتاب من المكتبة الجامعية.</p>
+                                        <a href="contact.html" class="btn btn-accent w-100 mb-2">طلب حجز</a>
+                                        <a href="library.html" class="btn btn-glass w-100 btn-sm">العودة للمكتبة</a>
+                                    </div>
+
+                                    <div class="book-detail-panel section-fade-up">
+                                        <h3 class="book-detail-panel__title"><i class="fas fa-book-open ms-2"></i>كتب ذات صلة</h3>
+                                        <div class="book-detail-related">${relatedHTML}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>`;
+
+            document.getElementById('bookDetailContent').innerHTML = html;
+
+            if (typeof initScrollAnimations === 'function') initScrollAnimations();
+            if (typeof initBackToTop === 'function') initBackToTop();
+        });
+    </script>
+</body>
+</html>

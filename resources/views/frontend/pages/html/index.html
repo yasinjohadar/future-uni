@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة المستقبل | الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800&family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+     
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4 align-items-center">
+                <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@futureuniversity.edu</span>
+                <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+966 11 234 5678</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <a href="#" class="top-bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-nav glass-nav py-1">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html">
+                <i class="fas fa-university me-2" style="color: var(--accent-color);"></i>
+                <span class="ms-2">جامعة</span><span style="color: var(--accent-color);">المستقبل</span>
+            </a>
+
+            <button class="navbar-toggler btn-glass border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-0">
+                    <li class="nav-item">
+                        <a class="nav-link active ps-3" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">عن الجامعة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="colleges.html">الكليات</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="admission.html">القبول</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="research.html">البحث العلمي</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="library.html">المكتبة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="news.html">الأخبار</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-3" href="contact.html">تواصل</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 me-lg-4">
+                    <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <div class="dropdown portal-dropdown">
+                        <button class="btn btn-glass btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-graduate me-1"></i> بوابة الطلاب
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end portal-menu">
+                            <li><a class="dropdown-item" href="courses.html"><i class="fas fa-book-open me-2"></i>المقررات</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2"></i>تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus me-2"></i>التسجيل</a></li>
+                        </ul>
+                    </div>
+                    <a href="admission.html" class="btn btn-accent btn-sm px-4">قدم الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div id="toast-container"></div>
+    <main>
+        <!-- Hero Carousel — Cinematic -->
+        <section class="hero-carousel" aria-label="عرض الجامعة">
+            <div class="hero-visual">
+                <div class="hero-progress" aria-hidden="true">
+                    <div class="hero-progress-fill"></div>
+                </div>
+
+                <div class="swiper hero-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1920&q=80');"></div>
+                            <div class="hero-slide-overlay"></div>
+                            <div class="hero-slide-pattern"></div>
+                            <div class="hero-slide-inner">
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-9 col-xl-8">
+                                            <div class="hero-luxury-panel">
+                                            <div class="hero-cinematic-content" aria-live="polite">
+                                                <span class="hero-slide-badge"><i class="fas fa-award me-2"></i>جامعة معتمدة عالمياً</span>
+                                                <h1 class="hero-slide-title">نحو مستقبل أكاديمي<br><span class="text-accent">متميز ومبتكر</span></h1>
+                                                <p class="hero-slide-desc">نقدم برامج أكاديمية رائدة وبيئة بحثية متطورة لإعداد كوادر مؤهلة تقود مسيرة التنمية والتطوير في المملكة.</p>
+                                                <div class="hero-ctas">
+                                                    <a href="colleges.html" class="btn btn-hero-primary">استكشف الكليات <i class="fas fa-arrow-left ms-2"></i></a>
+                                                    <a href="about.html" class="btn btn-hero-secondary">عن الجامعة</a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="hero-slide-bg hero-slide-bg--crop" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80');"></div>
+                            <div class="hero-slide-overlay"></div>
+                            <div class="hero-slide-pattern"></div>
+                            <div class="hero-slide-inner">
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-9 col-xl-8">
+                                            <div class="hero-luxury-panel">
+                                            <div class="hero-cinematic-content" aria-live="polite">
+                                                <span class="hero-slide-badge"><i class="fas fa-door-open me-2"></i>التسجيل مفتوح 2026</span>
+                                                <h1 class="hero-slide-title">بوابة القبول<br><span class="text-accent">مفتوحة الآن</span></h1>
+                                                <p class="hero-slide-desc">انضم إلى أكثر من 25,000 طالب وطالبة في رحلة أكاديمية استثنائية. قدّم طلبك اليوم وابدأ مستقبلك مع جامعة المستقبل.</p>
+                                                <div class="hero-ctas">
+                                                    <a href="admission.html" class="btn btn-hero-primary">قدم الآن <i class="fas fa-arrow-left ms-2"></i></a>
+                                                    <a href="programs.html" class="btn btn-hero-secondary">البرامج الأكاديمية</a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="hero-slide-bg hero-slide-bg--crop" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80');"></div>
+                            <div class="hero-slide-overlay"></div>
+                            <div class="hero-slide-pattern"></div>
+                            <div class="hero-slide-inner">
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-9 col-xl-8">
+                                            <div class="hero-luxury-panel">
+                                            <div class="hero-cinematic-content" aria-live="polite">
+                                                <span class="hero-slide-badge"><i class="fas fa-flask me-2"></i>35 مركزاً بحثياً</span>
+                                                <h1 class="hero-slide-title">ابتكار يصنع<br><span class="text-accent">المستقبل</span></h1>
+                                                <p class="hero-slide-desc">مراكز بحثية متطورة وشراكات عالمية في الذكاء الاصطناعي والعلوم الطبية والهندسة المستدامة.</p>
+                                                <div class="hero-ctas">
+                                                    <a href="research.html" class="btn btn-hero-primary">البحث العلمي <i class="fas fa-arrow-left ms-2"></i></a>
+                                                    <a href="library.html" class="btn btn-hero-secondary">المكتبة</a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80');"></div>
+                            <div class="hero-slide-overlay"></div>
+                            <div class="hero-slide-pattern"></div>
+                            <div class="hero-slide-inner">
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-9 col-xl-8">
+                                            <div class="hero-luxury-panel">
+                                            <div class="hero-cinematic-content" aria-live="polite">
+                                                <span class="hero-slide-badge"><i class="fas fa-users me-2"></i>حياة جامعية نابضة</span>
+                                                <h1 class="hero-slide-title">بيئة تعليمية<br><span class="text-accent">حيوية ومتنوعة</span></h1>
+                                                <p class="hero-slide-desc">أنشطة طلابية وفعاليات علمية ورياضية وثقافية تُثري تجربتك الجامعية وتبني شخصيتك القيادية.</p>
+                                                <div class="hero-ctas">
+                                                    <a href="news.html" class="btn btn-hero-primary">الأخبار والفعاليات <i class="fas fa-arrow-left ms-2"></i></a>
+                                                    <a href="contact.html" class="btn btn-hero-secondary">تواصل معنا</a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom controls bar -->
+                <div class="hero-bottom-bar">
+                    <div class="container">
+                        <div class="hero-bottom-bar__inner">
+                            <div class="hero-slide-counter" aria-live="polite">
+                                <span class="hero-slide-counter__current en-text">01</span>
+                                <span class="hero-slide-counter__line" aria-hidden="true"></span>
+                                <span class="hero-slide-counter__total en-text">04</span>
+                            </div>
+                            <div class="hero-pagination"></div>
+                            <div class="hero-controls-nav">
+                                <button type="button" class="hero-nav-btn hero-prev" aria-label="الشريحة السابقة"><i class="fas fa-chevron-right"></i></button>
+                                <button type="button" class="hero-nav-btn hero-next" aria-label="الشريحة التالية"><i class="fas fa-chevron-left"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-carousel__edge" aria-hidden="true"></div>
+        </section>
+
+        <!-- Stats Section — منفصل عن الهيرو -->
+        <section class="hero-stats-section section-fade-up">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="uni-card uni-card--stat h-100">
+                            <div class="uni-card__icon"><i class="fas fa-building-columns"></i></div>
+                            <h2 class="fw-bold counter en-text" data-target="12">0</h2>
+                            <p class="text-secondary m-0">كلية أكاديمية</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="uni-card uni-card--stat h-100">
+                            <div class="uni-card__icon"><i class="fas fa-book-open"></i></div>
+                            <h2 class="fw-bold counter en-text" data-target="85">0</h2>
+                            <p class="text-secondary m-0">برنامج أكاديمي</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="uni-card uni-card--stat h-100">
+                            <div class="uni-card__icon"><i class="fas fa-chalkboard-user"></i></div>
+                            <h2 class="fw-bold counter en-text" data-target="800">0</h2>
+                            <p class="text-secondary m-0">عضو هيئة تدريس</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="uni-card uni-card--stat h-100">
+                            <div class="uni-card__icon"><i class="fas fa-flask"></i></div>
+                            <h2 class="fw-bold counter en-text" data-target="35">0</h2>
+                            <p class="text-secondary m-0">مركز بحثي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About University -->
+        <section class="home-about-section section-fade-up">
+            <div class="container">
+                <div class="row g-4 g-xl-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="home-about-content">
+                            <div class="section-head home-about-head">
+                                <span class="section-head__eyebrow">حول الجامعة</span>
+                                <h2 class="section-head__title">جامعة المستقبل حيث يلتقي التعليم بالابتكار</h2>
+                                <p class="home-about-head__lead">منذ تأسيسها عام 1995، تقدّم الجامعة تجربة أكاديمية متكاملة تجمع بين التميز التعليمي والبحث التطبيقي وخدمة المجتمع.</p>
+                            </div>
+                            <p class="home-about-content__text">تضم جامعة المستقبل 12 كلية وأكثر من 85 برنامجاً أكاديمياً، وبيئة جامعية حيوية تستقطب آلاف الطلاب سنوياً. نؤمن بأن التعليم الجامعي يجب أن يُعدّ الخريج لسوق العمل ولمستقبل يتسم بالمرونة والإبداع.</p>
+                            <ul class="home-about-features">
+                                <li class="home-about-features__item">
+                                    <span class="home-about-features__icon"><i class="fas fa-certificate"></i></span>
+                                    <div class="home-about-features__body">
+                                        <strong class="home-about-features__title">اعتمادات محلية ودولية</strong>
+                                        <p class="home-about-features__desc">برامج معتمدة من ETEC وNCAAA وشراكات أكاديمية مع جامعات عالمية.</p>
+                                    </div>
+                                </li>
+                                <li class="home-about-features__item">
+                                    <span class="home-about-features__icon"><i class="fas fa-flask"></i></span>
+                                    <div class="home-about-features__body">
+                                        <strong class="home-about-features__title">بيئة بحثية متطورة</strong>
+                                        <p class="home-about-features__desc">35 مركزاً بحثياً في الذكاء الاصطناعي والطب والهندسة المستدامة.</p>
+                                    </div>
+                                </li>
+                                <li class="home-about-features__item">
+                                    <span class="home-about-features__icon"><i class="fas fa-handshake"></i></span>
+                                    <div class="home-about-features__body">
+                                        <strong class="home-about-features__title">شراكات وتوظيف</strong>
+                                        <p class="home-about-features__desc">اتفاقيات مع قطاعات الأعمال لدعم التدريب التعاوني ومسارات الخريجين.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="home-about-actions">
+                                <a href="about.html" class="btn btn-accent px-4">اعرف المزيد <i class="fas fa-arrow-left ms-2"></i></a>
+                                <a href="who-we-are.html" class="btn btn-glass">من نحن</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-about-visual">
+                            <figure class="home-about-visual__figure">
+                                <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=900&q=80" alt="حرم جامعة المستقبل الرئيسي" width="900" height="560" loading="lazy">
+                                <figcaption class="home-about-visual__badge">
+                                    <span class="home-about-visual__badge-value en-text">30+</span>
+                                    <span class="home-about-visual__badge-label">عاماً من التميز</span>
+                                </figcaption>
+                            </figure>
+                            <div class="home-about-visual__stats">
+                                <div class="home-about-visual__stat">
+                                    <i class="fas fa-users" aria-hidden="true"></i>
+                                    <span><strong class="en-text">25K+</strong> طالب وطالبة</span>
+                                </div>
+                                <div class="home-about-visual__stat">
+                                    <i class="fas fa-globe" aria-hidden="true"></i>
+                                    <span>شراكات أكاديمية دولية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colleges Section -->
+        <section class="home-colleges-section py-5 section-fade-up">
+            <div class="container py-4">
+                <div class="section-head d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4 mb-md-5">
+                    <div>
+                        <span class="section-head__eyebrow">كلياتنا</span>
+                        <h2 class="section-head__title">اكتشف كليات الجامعة</h2>
+                    </div>
+                    <a href="colleges.html" class="btn btn-glass home-colleges-all-btn d-none d-md-inline-flex">عرض الكل <i class="fas fa-arrow-left ms-2"></i></a>
+                </div>
+                <div class="row g-3 g-md-4" id="colleges-container">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="text-center mt-4 d-md-none">
+                    <a href="colleges.html" class="btn btn-glass home-colleges-all-btn">عرض الكل <i class="fas fa-arrow-left ms-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-5 bg-gradient-opacity section-fade-up">
+            <div class="container py-4">
+                <div class="section-head section-head--center mb-5">
+                    <span class="section-head__eyebrow">مميزاتنا</span>
+                    <h2 class="section-head__title">لماذا جامعة المستقبل؟</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="uni-card uni-card--feature h-100">
+                            <div class="uni-card__icon"><i class="fas fa-award"></i></div>
+                            <h5 class="fw-bold">اعتماد أكاديمي</h5>
+                            <p class="text-secondary small mt-2 m-0">برامج معتمدة محلياً ودولياً تضمن جودة التعليم ومخرجاته.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="uni-card uni-card--feature h-100">
+                            <div class="uni-card__icon"><i class="fas fa-microscope"></i></div>
+                            <h5 class="fw-bold">بحث علمي متقدم</h5>
+                            <p class="text-secondary small mt-2 m-0">مراكز بحثية مجهزة بأحدث التقنيات لدعم الابتكار والاكتشاف.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="uni-card uni-card--feature h-100">
+                            <div class="uni-card__icon"><i class="fas fa-globe"></i></div>
+                            <h5 class="fw-bold">شراكات عالمية</h5>
+                            <p class="text-secondary small mt-2 m-0">تعاون مع جامعات ومؤسسات عالمية رائدة لتبادل الخبرات.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="uni-card uni-card--feature h-100">
+                            <div class="uni-card__icon"><i class="fas fa-briefcase"></i></div>
+                            <h5 class="fw-bold">توظيف الخريجين</h5>
+                            <p class="text-secondary small mt-2 m-0">نسبة توظيف عالية لخريجينا في أفضل الشركات والمؤسسات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accreditations Section -->
+        <section class="py-5 section-fade-up">
+            <div class="container py-4">
+                <div class="section-head section-head--center mb-5">
+                    <span class="section-head__eyebrow">جودة معتمدة</span>
+                    <h2 class="section-head__title">الاعتمادات الأكاديمية</h2>
+                    <p class="section-head__desc">حاصلة على اعتمادات محلية ودولية تضمن أعلى معايير الجودة الأكاديمية.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="uni-card uni-card--accreditation h-100">
+                            <div class="accreditation-icon-wrapper"><i class="fas fa-shield-halved"></i></div>
+                            <h6 class="fw-bold small mb-1">ETEC</h6>
+                            <p class="text-secondary small m-0" style="font-size:0.7rem;">هيئة تقويم التعليم والتدريب</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="uni-card uni-card--accreditation h-100">
+                            <div class="accreditation-icon-wrapper"><i class="fas fa-gears"></i></div>
+                            <h6 class="fw-bold small mb-1">ABET</h6>
+                            <p class="text-secondary small m-0" style="font-size:0.7rem;">اعتماد الهندسة والتقنية</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="uni-card uni-card--accreditation h-100">
+                            <div class="accreditation-icon-wrapper"><i class="fas fa-chart-line"></i></div>
+                            <h6 class="fw-bold small mb-1">AACSB</h6>
+                            <p class="text-secondary small m-0" style="font-size:0.7rem;">اعتماد إدارة الأعمال</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="uni-card uni-card--accreditation h-100">
+                            <div class="accreditation-icon-wrapper"><i class="fas fa-stethoscope"></i></div>
+                            <h6 class="fw-bold small mb-1">WFME</h6>
+                            <p class="text-secondary small m-0" style="font-size:0.7rem;">اعتماد التعليم الطبي</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="uni-card uni-card--accreditation h-100">
+                            <div class="accreditation-icon-wrapper"><i class="fas fa-star"></i></div>
+                            <h6 class="fw-bold small mb-1">QS Stars</h6>
+                            <p class="text-secondary small m-0" style="font-size:0.7rem;">تصنيف 5 نجوم</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="uni-card uni-card--accreditation h-100">
+                            <div class="accreditation-icon-wrapper"><i class="fas fa-building-columns"></i></div>
+                            <h6 class="fw-bold small mb-1">وزارة التعليم</h6>
+                            <p class="text-secondary small m-0" style="font-size:0.7rem;">المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="py-5 section-fade-up">
+            <div class="container py-4">
+                <div class="section-head section-head--center mb-5">
+                    <span class="section-head__eyebrow">برامجنا الأكاديمية</span>
+                    <h2 class="section-head__title">اختر مسارك التعليمي</h2>
+                    <p class="section-head__desc">نقدم مجموعة متنوعة من البرامج الأكاديمية في مراحل البكالوريوس والماجستير والدكتوراه.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="uni-card uni-card--program h-100">
+                            <div class="program-level-badge level-bachelor mb-3">بكالوريوس</div>
+                            <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h5 class="fw-bold">45 برنامج بكالوريوس</h5>
+                            <p class="text-secondary small">برامج متنوعة في مختلف التخصصات العلمية والإنسانية.</p>
+                            <div class="uni-card__cta"><a href="programs.html" class="btn btn-glass btn-sm">استعرض البرامج</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uni-card uni-card--program h-100">
+                            <div class="program-level-badge level-master mb-3">ماجستير</div>
+                            <div class="program-icon"><i class="fas fa-user-graduate"></i></div>
+                            <h5 class="fw-bold">28 برنامج ماجستير</h5>
+                            <p class="text-secondary small">برامج دراسات عليا متخصصة لتطوير الكفاءات المهنية.</p>
+                            <div class="uni-card__cta"><a href="programs.html" class="btn btn-glass btn-sm">استعرض البرامج</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uni-card uni-card--program h-100">
+                            <div class="program-level-badge level-phd mb-3">دكتوراه</div>
+                            <div class="program-icon"><i class="fas fa-atom"></i></div>
+                            <h5 class="fw-bold">12 برنامج دكتوراه</h5>
+                            <p class="text-secondary small">برامج دكتوراه بحثية في التخصصات المتميزة.</p>
+                            <div class="uni-card__cta"><a href="programs.html" class="btn btn-glass btn-sm">استعرض البرامج</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Slider Section -->
+        <section class="home-staff-section py-5 section-fade-up">
+            <div class="container py-4">
+                <div class="section-head section-head--center mb-4 mb-md-5">
+                    <span class="section-head__eyebrow">القيادة الأكاديمية</span>
+                    <h2 class="section-head__title">الهيئة الإدارية</h2>
+                    <p class="section-head__desc">نخبة من القادة الأكاديميين ذوي الخبرة والكفاءة العالية.</p>
+                </div>
+
+                <div class="home-staff-toolbar d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div class="home-staff-nav home-carousel-nav d-flex gap-2">
+                        <button type="button" class="home-carousel-nav__btn staff-prev" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+                        <button type="button" class="home-carousel-nav__btn staff-next" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+                    </div>
+                    <a href="staff.html" class="btn btn-glass home-staff-all-btn d-none d-md-inline-flex">تعرف على القيادة <i class="fas fa-arrow-left ms-2"></i></a>
+                </div>
+
+                <div class="home-staff-slider">
+                <div class="swiper staff-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="staff-detail.html?id=1" class="text-decoration-none">
+                            <div class="uni-card uni-card--staff h-100">
+                                <div class="staff-image">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h5 class="fw-bold mb-1">أ.د. عبدالله الراشد</h5>
+                                <p class="staff-position mb-2">رئيس الجامعة</p>
+                                <p class="text-secondary small uni-card--staff__bio mb-0">خبير في الإدارة الأكاديمية والتخطيط الاستراتيجي بخبرة تتجاوز 30 عاماً.</p>
+                                <span class="uni-card--staff__more">عرض الملف <i class="fas fa-arrow-left"></i></span>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="staff-detail.html?id=2" class="text-decoration-none">
+                            <div class="uni-card uni-card--staff h-100">
+                                <div class="staff-image">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h5 class="fw-bold mb-1">أ.د. فاطمة الزهراني</h5>
+                                <p class="staff-position mb-2">نائب الرئيس للشؤون الأكاديمية</p>
+                                <p class="text-secondary small uni-card--staff__bio mb-0">متخصصة في تطوير المناهج والبرامج الأكاديمية المعتمدة.</p>
+                                <span class="uni-card--staff__more">عرض الملف <i class="fas fa-arrow-left"></i></span>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="staff-detail.html?id=3" class="text-decoration-none">
+                            <div class="uni-card uni-card--staff h-100">
+                                <div class="staff-image">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h5 class="fw-bold mb-1">أ.د. محمد العتيبي</h5>
+                                <p class="staff-position mb-2">نائب الرئيس للبحث العلمي</p>
+                                <p class="text-secondary small uni-card--staff__bio mb-0">باحث متميز في مجال الذكاء الاصطناعي وتطبيقاته.</p>
+                                <span class="uni-card--staff__more">عرض الملف <i class="fas fa-arrow-left"></i></span>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="staff-detail.html?id=4" class="text-decoration-none">
+                            <div class="uni-card uni-card--staff h-100">
+                                <div class="staff-image">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h5 class="fw-bold mb-1">د. نورة القحطاني</h5>
+                                <p class="staff-position mb-2">عميدة كلية الهندسة</p>
+                                <p class="text-secondary small uni-card--staff__bio mb-0">خبيرة في الهندسة المدنية والتصميم المستدام.</p>
+                                <span class="uni-card--staff__more">عرض الملف <i class="fas fa-arrow-left"></i></span>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="staff-detail.html?id=5" class="text-decoration-none">
+                            <div class="uni-card uni-card--staff h-100">
+                                <div class="staff-image">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h5 class="fw-bold mb-1">أ.د. خالد الدوسري</h5>
+                                <p class="staff-position mb-2">عميد كلية الطب</p>
+                                <p class="text-secondary small uni-card--staff__bio mb-0">استشاري في الجراحة العامة وزراعة الأعضاء.</p>
+                                <span class="uni-card--staff__more">عرض الملف <i class="fas fa-arrow-left"></i></span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination staff-pagination"></div>
+                </div>
+                </div>
+
+                <div class="text-center mt-4 d-md-none">
+                    <a href="staff.html" class="btn btn-accent px-5 py-2">تعرف على القيادة <i class="fas fa-arrow-left ms-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="home-news-section py-5 section-fade-up">
+            <div class="container py-4">
+                <div class="section-head d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4 mb-md-5">
+                    <div>
+                        <span class="section-head__eyebrow">آخر المستجدات</span>
+                        <h2 class="section-head__title">أخبار الجامعة</h2>
+                    </div>
+                    <div class="home-news-head__actions d-flex align-items-center gap-2 gap-md-3">
+                        <div class="home-news-nav home-carousel-nav d-flex gap-2">
+                            <button type="button" class="home-carousel-nav__btn news-prev" aria-label="الخبر السابق"><i class="fas fa-chevron-right"></i></button>
+                            <button type="button" class="home-carousel-nav__btn news-next" aria-label="الخبر التالي"><i class="fas fa-chevron-left"></i></button>
+                        </div>
+                        <a href="news.html" class="btn btn-glass home-news-all-btn d-none d-md-inline-flex">جميع الأخبار <i class="fas fa-arrow-left ms-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="home-news-slider">
+                <div class="swiper news-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="blog-detail.html" class="text-decoration-none">
+                            <article class="uni-card uni-card--news h-100">
+                                <div class="news-image">
+                                    <span class="news-date-badge"><span class="day">15</span><span class="month">مارس</span></span>
+                                    <div class="news-thumb news-thumb--1">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                </div>
+                                <div class="news-body">
+                                    <span class="category-badge">إنجازات</span>
+                                    <h3 class="blog-title">الجامعة تحقق مراكز متقدمة في التصنيف العالمي 2026</h3>
+                                    <p class="text-secondary small mb-4">حققت جامعة المستقبل قفزة نوعية في التصنيفات العالمية لتتقدم 50 مركزاً...</p>
+                                    <span class="read-more-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                                </div>
+                            </article>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="blog-detail.html" class="text-decoration-none">
+                            <article class="uni-card uni-card--news h-100">
+                                <div class="news-image">
+                                    <span class="news-date-badge"><span class="day">10</span><span class="month">مارس</span></span>
+                                    <div class="news-thumb news-thumb--2">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                </div>
+                                <div class="news-body">
+                                    <span class="category-badge">شراكات</span>
+                                    <h3 class="blog-title">توقيع اتفاقية شراكة مع جامعة MIT الأمريكية</h3>
+                                    <p class="text-secondary small mb-4">وقعت الجامعة اتفاقية تعاون أكاديمي وبحثي مع معهد ماساتشوستس...</p>
+                                    <span class="read-more-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                                </div>
+                            </article>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="blog-detail.html" class="text-decoration-none">
+                            <article class="uni-card uni-card--news h-100">
+                                <div class="news-image">
+                                    <span class="news-date-badge"><span class="day">05</span><span class="month">مارس</span></span>
+                                    <div class="news-thumb news-thumb--3">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                </div>
+                                <div class="news-body">
+                                    <span class="category-badge">بحث علمي</span>
+                                    <h3 class="blog-title">افتتاح مركز أبحاث الذكاء الاصطناعي الجديد</h3>
+                                    <p class="text-secondary small mb-4">تم افتتاح مركز أبحاث الذكاء الاصطناعي المجهز بأحدث التقنيات...</p>
+                                    <span class="read-more-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                                </div>
+                            </article>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="blog-detail.html" class="text-decoration-none">
+                            <article class="uni-card uni-card--news h-100">
+                                <div class="news-image">
+                                    <span class="news-date-badge"><span class="day">28</span><span class="month">فبراير</span></span>
+                                    <div class="news-thumb news-thumb--4">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                </div>
+                                <div class="news-body">
+                                    <span class="category-badge">فعاليات</span>
+                                    <h3 class="blog-title">انطلاق فعاليات الأسبوع العلمي الخامس</h3>
+                                    <p class="text-secondary small mb-4">تنطلق فعاليات الأسبوع العلمي بمشاركة أكثر من 50 باحثاً...</p>
+                                    <span class="read-more-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                                </div>
+                            </article>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination news-pagination"></div>
+                </div>
+                </div>
+
+                <div class="text-center mt-4 d-md-none">
+                    <a href="news.html" class="btn btn-glass home-news-all-btn">جميع الأخبار <i class="fas fa-arrow-left ms-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="home-cta section-fade-up">
+            <div class="container">
+                <div class="home-cta__inner">
+                    <div class="home-cta__decor" aria-hidden="true">
+                        <span class="home-cta__icon-ring"><i class="fas fa-graduation-cap"></i></span>
+                    </div>
+                    <div class="home-cta__content">
+                        <span class="home-cta__badge"><i class="fas fa-circle-check"></i> التسجيل مفتوح للعام 2026/2027</span>
+                        <h2 class="home-cta__title">ابدأ رحلتك <span>الأكاديمية</span> معنا</h2>
+                        <p class="home-cta__desc">انضم إلى مجتمع جامعة المستقبل واستكشف برامجاً أكاديمية معتمدة تُعدّك لسوق العمل والقيادة.</p>
+                        <ul class="home-cta__perks">
+                            <li><i class="fas fa-check"></i> قبول مفتوح الآن</li>
+                            <li><i class="fas fa-check"></i> برامج معتمدة دولياً</li>
+                            <li><i class="fas fa-check"></i> دعم أكاديمي شامل</li>
+                        </ul>
+                    </div>
+                    <div class="home-cta__actions">
+                        <a href="admission.html" class="btn btn-accent btn-lg home-cta__btn-primary">قدم الآن <i class="fas fa-arrow-left ms-2"></i></a>
+                        <a href="contact.html" class="btn btn-glass home-cta__btn-outline btn-lg">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+        <footer class="site-footer">
+        <div class="site-footer__top">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="site-footer__brand">
+                            <span class="site-footer__brand-icon"><i class="fas fa-university"></i></span>
+                            <span class="site-footer__brand-name">جامعة<span>المستقبل</span></span>
+                        </a>
+                        <p class="site-footer__desc">جامعة رائدة تسعى لتقديم تعليم عالي الجودة وبحث علمي متميز، لإعداد كوادر مؤهلة تقود مسيرة التنمية في المملكة.</p>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="site-footer__heading">روابط سريعة</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">عن الجامعة</a></li>
+                            <li><a href="colleges.html">الكليات</a></li>
+                            <li><a href="admission.html">القبول</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                            <li><a href="terms.html">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">خدمات</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="scholarships.html">المنح الدراسية</a></li>
+                            <li><a href="tuition-fees.html">الرسوم الدراسية</a></li>
+                            <li><a href="student-services.html">خدمات الطلاب</a></li>
+                            <li><a href="academic-calendar.html">التقويم الأكاديمي</a></li>
+                            <li><a href="events.html">الفعاليات</a></li>
+                            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                            <li><a href="faculty.html">هيئة التدريس</a></li>
+                            <li><a href="research.html">البحث العلمي</a></li>
+                            <li><a href="library.html">المكتبة</a></li>
+                            <li><a href="news.html">الأخبار</a></li>
+                            <li><a href="courses.html">بوابة الطلاب</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">تواصل معنا</h6>
+                        <ul class="site-footer__contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                            <li><i class="fas fa-phone"></i><span class="en-text" dir="ltr">+966 11 234 5678</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@futureuniversity.edu</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-inner">
+                    <p class="site-footer__copy">&copy; 2026 جامعة المستقبل. جميع الحقوق محفوظة.</p>
+                    <div class="site-footer__legal">
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="terms.html">الشروط والأحكام</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="contact.html">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/uni-main.js"></script>
+    <script>
+        const staffSwiper = new Swiper('.staff-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: '.staff-pagination', clickable: true },
+            navigation: { nextEl: '.staff-next', prevEl: '.staff-prev' },
+            breakpoints: {
+                576:  { slidesPerView: 2 },
+                992:  { slidesPerView: 3 },
+                1200: { slidesPerView: 4 }
+            }
+        });
+
+        const newsSwiper = new Swiper('.news-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            pagination: { el: '.news-pagination', clickable: true },
+            navigation: { nextEl: '.news-next', prevEl: '.news-prev' },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
+</body>
+</html>

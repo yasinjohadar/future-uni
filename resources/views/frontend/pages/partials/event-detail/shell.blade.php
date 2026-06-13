@@ -1,0 +1,1 @@
+<main id="eventDetailContent"></main>

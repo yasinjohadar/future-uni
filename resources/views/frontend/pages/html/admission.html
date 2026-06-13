@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القبول والتسجيل | جامعة المستقبل</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800&family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admission-page">
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4 align-items-center">
+                <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@futureuniversity.edu</span>
+                <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+966 11 234 5678</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <a href="#" class="top-bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-nav glass-nav py-1">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html">
+                <i class="fas fa-university me-2" style="color: var(--accent-color);"></i>
+                <span class="ms-2">جامعة</span><span style="color: var(--accent-color);">المستقبل</span>
+            </a>
+            <button class="navbar-toggler btn-glass border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-0">
+                    <li class="nav-item"><a class="nav-link ps-3" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">عن الجامعة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="colleges.html">الكليات</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="admission.html">القبول</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="research.html">البحث العلمي</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="library.html">المكتبة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="news.html">الأخبار</a></li>
+                    <li class="nav-item"><a class="nav-link ps-3" href="contact.html">تواصل</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 me-lg-4">
+                    <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button>
+                    <div class="dropdown portal-dropdown">
+                        <button class="btn btn-glass btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-graduate me-1"></i> بوابة الطلاب
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end portal-menu">
+                            <li><a class="dropdown-item" href="courses.html"><i class="fas fa-book-open me-2"></i>المقررات</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2"></i>تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus me-2"></i>التسجيل</a></li>
+                        </ul>
+                    </div>
+                    <a href="admission.html" class="btn btn-accent btn-sm px-4">قدم الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="page-hero-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h1 class="page-hero-title">القبول والتسجيل</h1>
+                    <p class="page-hero-subtitle">كل ما تحتاج معرفته عن شروط القبول وخطوات التقديم</p>
+                    <div class="page-hero-breadcrumb">
+                        <a href="index.html">الرئيسية</a>
+                        <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                        <span class="current">القبول والتسجيل</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-highlights section-fade-up">
+            <div class="container">
+                <div class="admission-highlights__grid">
+                    <div class="admission-highlight">
+                        <span class="admission-highlight__icon"><i class="fas fa-door-open"></i></span>
+                        <div>
+                            <strong class="admission-highlight__value">1 يونيو</strong>
+                            <span class="admission-highlight__label">بداية التقديم</span>
+                        </div>
+                    </div>
+                    <div class="admission-highlight">
+                        <span class="admission-highlight__icon"><i class="fas fa-hourglass-end"></i></span>
+                        <div>
+                            <strong class="admission-highlight__value">15 يوليو</strong>
+                            <span class="admission-highlight__label">آخر موعد للتقديم</span>
+                        </div>
+                    </div>
+                    <div class="admission-highlight">
+                        <span class="admission-highlight__icon"><i class="fas fa-building-columns"></i></span>
+                        <div>
+                            <strong class="admission-highlight__value en-text">12</strong>
+                            <span class="admission-highlight__label">كلية أكاديمية</span>
+                        </div>
+                    </div>
+                    <div class="admission-highlight">
+                        <span class="admission-highlight__icon"><i class="fas fa-book-open"></i></span>
+                        <div>
+                            <strong class="admission-highlight__value en-text">85+</strong>
+                            <span class="admission-highlight__label">برنامج أكاديمي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-quicklinks section-fade-up">
+            <div class="container">
+                <div class="section-head text-center mb-4">
+                    <span class="section-head__eyebrow">دليل الطالب</span>
+                    <h2 class="section-head__title">خدمات القبول والدراسة</h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <a href="scholarships.html" class="admission-quicklink">
+                            <span class="admission-quicklink__icon"><i class="fas fa-award"></i></span>
+                            <strong class="admission-quicklink__title">المنح الدراسية</strong>
+                            <span class="admission-quicklink__desc">استكشف المنح المتاحة</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="tuition-fees.html" class="admission-quicklink">
+                            <span class="admission-quicklink__icon"><i class="fas fa-coins"></i></span>
+                            <strong class="admission-quicklink__title">الرسوم الدراسية</strong>
+                            <span class="admission-quicklink__desc">تعرف على التكاليف</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="student-services.html" class="admission-quicklink">
+                            <span class="admission-quicklink__icon"><i class="fas fa-handshake"></i></span>
+                            <strong class="admission-quicklink__title">خدمات الطلاب</strong>
+                            <span class="admission-quicklink__desc">الدعم الأكاديمي والحرم</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="academic-calendar.html" class="admission-quicklink">
+                            <span class="admission-quicklink__icon"><i class="fas fa-calendar-days"></i></span>
+                            <strong class="admission-quicklink__title">التقويم الأكاديمي</strong>
+                            <span class="admission-quicklink__desc">مواعيد الفصول والاختبارات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-section section-fade-up">
+            <div class="container">
+                <div class="row g-4 g-xl-5">
+                    <div class="col-lg-6">
+                        <div class="section-head mb-4">
+                            <span class="section-head__eyebrow">متطلبات القبول</span>
+                            <h2 class="section-head__title">شروط القبول العام</h2>
+                        </div>
+                        <div class="admission-panel">
+                            <ul class="admission-req-list list-unstyled mb-0">
+                                <li class="admission-req-item">
+                                    <span class="admission-req-item__icon"><i class="fas fa-check"></i></span>
+                                    <div>
+                                        <strong class="admission-req-item__title">شهادة الثانوية العامة</strong>
+                                        <p class="admission-req-item__desc">أو ما يعادلها من داخل أو خارج المملكة</p>
+                                    </div>
+                                </li>
+                                <li class="admission-req-item">
+                                    <span class="admission-req-item__icon"><i class="fas fa-check"></i></span>
+                                    <div>
+                                        <strong class="admission-req-item__title">اجتياز اختبار القدرات</strong>
+                                        <p class="admission-req-item__desc">اختبار القدرات العامة والتحصيلي</p>
+                                    </div>
+                                </li>
+                                <li class="admission-req-item">
+                                    <span class="admission-req-item__icon"><i class="fas fa-check"></i></span>
+                                    <div>
+                                        <strong class="admission-req-item__title">حسن السيرة والسلوك</strong>
+                                        <p class="admission-req-item__desc">شهادة حسن سلوك من المدرسة الثانوية</p>
+                                    </div>
+                                </li>
+                                <li class="admission-req-item">
+                                    <span class="admission-req-item__icon"><i class="fas fa-check"></i></span>
+                                    <div>
+                                        <strong class="admission-req-item__title">اجتياز المقابلة الشخصية</strong>
+                                        <p class="admission-req-item__desc">للكليات التي تتطلب مقابلة</p>
+                                    </div>
+                                </li>
+                                <li class="admission-req-item">
+                                    <span class="admission-req-item__icon"><i class="fas fa-check"></i></span>
+                                    <div>
+                                        <strong class="admission-req-item__title">الفحص الطبي</strong>
+                                        <p class="admission-req-item__desc">لياقة طبية للطالب</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-head mb-4">
+                            <span class="section-head__eyebrow">مواعيد مهمة</span>
+                            <h2 class="section-head__title">جدول القبول</h2>
+                        </div>
+                        <div class="admission-panel">
+                            <div class="admission-schedule-list">
+                                <div class="admission-schedule-item">
+                                    <span class="admission-schedule-item__label">بداية التقديم</span>
+                                    <span class="admission-schedule-item__date">1 يونيو 2026</span>
+                                </div>
+                                <div class="admission-schedule-item">
+                                    <span class="admission-schedule-item__label">نهاية التقديم</span>
+                                    <span class="admission-schedule-item__date">15 يوليو 2026</span>
+                                </div>
+                                <div class="admission-schedule-item">
+                                    <span class="admission-schedule-item__label">إعلان النتائج</span>
+                                    <span class="admission-schedule-item__date">1 أغسطس 2026</span>
+                                </div>
+                                <div class="admission-schedule-item">
+                                    <span class="admission-schedule-item__label">بداية الدراسة</span>
+                                    <span class="admission-schedule-item__date">25 أغسطس 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-steps-section section-fade-up">
+            <div class="container">
+                <div class="section-head text-center mb-4">
+                    <span class="section-head__eyebrow">خطوات التقديم</span>
+                    <h2 class="section-head__title">كيف تقدم طلبك؟</h2>
+                    <p class="section-head__desc mx-auto mb-0" style="max-width: 520px;">اتبع الخطوات التالية لإكمال طلب القبول بسهولة.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="admission-panel admission-panel--steps">
+                            <div class="admission-step" data-step="1">
+                                <h5 class="admission-step__title">إنشاء حساب</h5>
+                                <p class="admission-step__desc">قم بإنشاء حساب على بوابة القبول الإلكتروني بالجامعة.</p>
+                            </div>
+                            <div class="admission-step" data-step="2">
+                                <h5 class="admission-step__title">تعبئة البيانات</h5>
+                                <p class="admission-step__desc">أدخل بياناتك الشخصية والأكاديمية بشكل دقيق وكامل.</p>
+                            </div>
+                            <div class="admission-step" data-step="3">
+                                <h5 class="admission-step__title">رفع المستندات</h5>
+                                <p class="admission-step__desc">قم برفع صورة من شهادة الثانوية ونتائج الاختبارات.</p>
+                            </div>
+                            <div class="admission-step" data-step="4">
+                                <h5 class="admission-step__title">اختيار التخصص</h5>
+                                <p class="admission-step__desc">اختر الكلية والتخصص المطلوب بحد أقصى 3 رغبات.</p>
+                            </div>
+                            <div class="admission-step" data-step="5">
+                                <h5 class="admission-step__title">إرسال الطلب</h5>
+                                <p class="admission-step__desc">راجع بياناتك ثم أرسل الطلب وانتظر إشعار القبول.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-form-section section-fade-up" id="application-form">
+            <div class="container">
+                <div class="section-head text-center mb-4">
+                    <span class="section-head__eyebrow">نموذج التقديم</span>
+                    <h2 class="section-head__title">قدم طلب القبول الآن</h2>
+                    <p class="section-head__desc mx-auto mb-0" style="max-width: 560px;">أدخل بياناتك بدقة لبدء عملية التقديم في جامعة المستقبل.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <form id="admission-form" class="admission-form-panel">
+                            <h4 class="admission-form__section-title">
+                                <i class="fas fa-user ms-2"></i>البيانات الشخصية
+                            </h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">الاسم الأول *</label>
+                                    <input type="text" name="firstName" class="form-control" placeholder="أدخل اسمك الأول" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">اسم العائلة *</label>
+                                    <input type="text" name="lastName" class="form-control" placeholder="أدخل اسم العائلة" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">رقم الهوية / الإقامة *</label>
+                                    <input type="text" name="nationalId" class="form-control" placeholder="أدخل رقم الهوية" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">تاريخ الميلاد *</label>
+                                    <input type="date" name="birthDate" class="form-control" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">الجنسية *</label>
+                                    <select name="nationality" class="form-select" required>
+                                        <option value="" class="bg-dark">اختر الجنسية</option>
+                                        <option value="saudi" class="bg-dark">سعودي</option>
+                                        <option value="non-saudi" class="bg-dark">غير سعودي</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">الجنس *</label>
+                                    <select name="gender" class="form-select" required>
+                                        <option value="" class="bg-dark">اختر الجنس</option>
+                                        <option value="male" class="bg-dark">ذكر</option>
+                                        <option value="female" class="bg-dark">أنثى</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info -->
+                            <h4 class="admission-form__section-title">
+                                <i class="fas fa-phone ms-2"></i>معلومات التواصل
+                            </h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">البريد الإلكتروني *</label>
+                                    <input type="email" name="email" class="form-control" placeholder="example@email.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">رقم الجوال *</label>
+                                    <input type="tel" name="phone" class="form-control" placeholder="05XXXXXXXX" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">المدينة *</label>
+                                    <select name="city" class="form-select" required>
+                                        <option value="" class="bg-dark">اختر المدينة</option>
+                                        <option value="riyadh" class="bg-dark">الرياض</option>
+                                        <option value="jeddah" class="bg-dark">جدة</option>
+                                        <option value="dammam" class="bg-dark">الدمام</option>
+                                        <option value="makkah" class="bg-dark">مكة المكرمة</option>
+                                        <option value="madinah" class="bg-dark">المدينة المنورة</option>
+                                        <option value="other" class="bg-dark">أخرى</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">العنوان</label>
+                                    <input type="text" name="address" class="form-control" placeholder="الحي - الشارع">
+                                </div>
+                            </div>
+
+                            <!-- Academic Info -->
+                            <h4 class="admission-form__section-title">
+                                <i class="fas fa-graduation-cap ms-2"></i>البيانات الأكاديمية
+                            </h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">نوع الشهادة *</label>
+                                    <select name="degreeType" class="form-select" required>
+                                        <option value="" class="bg-dark">اختر نوع الشهادة</option>
+                                        <option value="bachelor" class="bg-dark">بكالوريوس</option>
+                                        <option value="master" class="bg-dark">ماجستير</option>
+                                        <option value="phd" class="bg-dark">دكتوراه</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">الكلية المطلوبة *</label>
+                                    <select name="college" class="form-select" required>
+                                        <option value="" class="bg-dark">اختر الكلية</option>
+                                        <option value="engineering" class="bg-dark">كلية الهندسة</option>
+                                        <option value="medicine" class="bg-dark">كلية الطب</option>
+                                        <option value="business" class="bg-dark">كلية إدارة الأعمال</option>
+                                        <option value="cs" class="bg-dark">كلية علوم الحاسب</option>
+                                        <option value="science" class="bg-dark">كلية العلوم</option>
+                                        <option value="pharmacy" class="bg-dark">كلية الصيدلة</option>
+                                        <option value="dentistry" class="bg-dark">كلية طب الأسنان</option>
+                                        <option value="education" class="bg-dark">كلية التربية</option>
+                                        <option value="law" class="bg-dark">كلية الحقوق</option>
+                                        <option value="architecture" class="bg-dark">كلية العمارة</option>
+                                        <option value="languages" class="bg-dark">كلية اللغات</option>
+                                        <option value="design" class="bg-dark">كلية التصاميم</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">اسم المدرسة / الجامعة السابقة *</label>
+                                    <input type="text" name="prevSchool" class="form-control" placeholder="اسم المدرسة أو الجامعة" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="admission-form__label">المعدل *</label>
+                                    <input type="number" name="gpa" class="form-control" placeholder="المعدل" min="0" max="100" step="0.01" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="admission-form__label">سنة التخرج *</label>
+                                    <input type="number" name="gradYear" class="form-control" placeholder="2026" min="2000" max="2026" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">درجة اختبار القدرات</label>
+                                    <input type="number" name="qudrat" class="form-control" placeholder="درجة القدرات" min="0" max="100" step="0.01">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">درجة التحصيلي</label>
+                                    <input type="number" name="tahsili" class="form-control" placeholder="درجة التحصيلي" min="0" max="100" step="0.01">
+                                </div>
+                            </div>
+
+                            <!-- Preferences -->
+                            <h4 class="admission-form__section-title">
+                                <i class="fas fa-list-check ms-2"></i>الرغبات والتخصصات
+                            </h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">الرغبة الأولى *</label>
+                                    <select name="pref1" class="form-select" required>
+                                        <option value="" class="bg-dark">اختر التخصص</option>
+                                        <option value="ce" class="bg-dark">الهندسة المدنية</option>
+                                        <option value="me" class="bg-dark">الهندسة المعمارية</option>
+                                        <option value="cs" class="bg-dark">علوم الحاسب</option>
+                                        <option value="ai" class="bg-dark">الذكاء الاصطناعي</option>
+                                        <option value="med" class="bg-dark">الطب والجراحة</option>
+                                        <option value="pharm" class="bg-dark">الصيدلة</option>
+                                        <option value="bus" class="bg-dark">إدارة الأعمال</option>
+                                        <option value="acc" class="bg-dark">المحاسبة</option>
+                                        <option value="law" class="bg-dark">القانون</option>
+                                        <option value="edu" class="bg-dark">التربية</option>
+                                        <option value="sci" class="bg-dark">العلوم</option>
+                                        <option value="des" class="bg-dark">التصميم</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">الرغبة الثانية</label>
+                                    <select name="pref2" class="form-select">
+                                        <option value="" class="bg-dark">اختر التخصص</option>
+                                        <option value="ce" class="bg-dark">الهندسة المدنية</option>
+                                        <option value="me" class="bg-dark">الهندسة المعمارية</option>
+                                        <option value="cs" class="bg-dark">علوم الحاسب</option>
+                                        <option value="ai" class="bg-dark">الذكاء الاصطناعي</option>
+                                        <option value="med" class="bg-dark">الطب والجراحة</option>
+                                        <option value="pharm" class="bg-dark">الصيدلة</option>
+                                        <option value="bus" class="bg-dark">إدارة الأعمال</option>
+                                        <option value="acc" class="bg-dark">المحاسبة</option>
+                                        <option value="law" class="bg-dark">القانون</option>
+                                        <option value="edu" class="bg-dark">التربية</option>
+                                        <option value="sci" class="bg-dark">العلوم</option>
+                                        <option value="des" class="bg-dark">التصميم</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="admission-form__label">الرغبة الثالثة</label>
+                                    <select name="pref3" class="form-select">
+                                        <option value="" class="bg-dark">اختر التخصص</option>
+                                        <option value="ce" class="bg-dark">الهندسة المدنية</option>
+                                        <option value="me" class="bg-dark">الهندسة المعمارية</option>
+                                        <option value="cs" class="bg-dark">علوم الحاسب</option>
+                                        <option value="ai" class="bg-dark">الذكاء الاصطناعي</option>
+                                        <option value="med" class="bg-dark">الطب والجراحة</option>
+                                        <option value="pharm" class="bg-dark">الصيدلة</option>
+                                        <option value="bus" class="bg-dark">إدارة الأعمال</option>
+                                        <option value="acc" class="bg-dark">المحاسبة</option>
+                                        <option value="law" class="bg-dark">القانون</option>
+                                        <option value="edu" class="bg-dark">التربية</option>
+                                        <option value="sci" class="bg-dark">العلوم</option>
+                                        <option value="des" class="bg-dark">التصميم</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Uploads -->
+                            <h4 class="admission-form__section-title">
+                                <i class="fas fa-cloud-arrow-up ms-2"></i>رفع المستندات
+                            </h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">صورة الشهادة *</label>
+                                    <input type="file" name="certificate" class="form-control" accept=".pdf,.jpg,.png" required>
+                                    <small class="text-secondary">PDF أو صورة - الحد الأقصى 5MB</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">صورة الهوية *</label>
+                                    <input type="file" name="idCard" class="form-control" accept=".pdf,.jpg,.png" required>
+                                    <small class="text-secondary">PDF أو صورة - الحد الأقصى 5MB</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">نتيجة القدرات</label>
+                                    <input type="file" name="qudratResult" class="form-control" accept=".pdf,.jpg,.png">
+                                    <small class="text-secondary">PDF أو صورة - الحد الأقصى 5MB</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="admission-form__label">صورة شخصية</label>
+                                    <input type="file" name="photo" class="form-control" accept=".jpg,.png">
+                                    <small class="text-secondary">صورة بخلفية بيضاء - الحد الأقصى 2MB</small>
+                                </div>
+                            </div>
+
+                            <!-- Agreement -->
+                            <div class="admission-form__agreement">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">
+                                        أقر بأن جميع البيانات المدخلة صحيحة وأتحمل المسؤولية في حال ثبوت خلاف ذلك.
+                                    </label>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" id="agreePrivacy" required>
+                                    <label class="form-check-label" for="agreePrivacy">
+                                        أوافق على <a href="#" class="text-accent">سياسة الخصوصية</a> و <a href="#" class="text-accent">شروط الاستخدام</a>.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-accent btn-lg px-5 py-3 rounded-pill">
+                                    <i class="fas fa-paper-plane ms-2"></i>إرسال طلب القبول
+                                </button>
+                                <p class="text-secondary small mt-3">سيتم مراجعة طلبك والتواصل معك خلال 5-7 أيام عمل.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-cta section-fade-up">
+            <div class="container">
+                <div class="admission-cta__inner">
+                    <div>
+                        <h2 class="admission-cta__title">هل لديك استفسار؟</h2>
+                        <p class="admission-cta__desc mb-0">فريق القبول والتسجيل جاهز للإجابة على جميع استفساراتك.</p>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="contact.html" class="btn btn-accent px-4">تواصل معنا <i class="fas fa-arrow-left ms-2"></i></a>
+                        <a href="tel:+966112345678" class="btn btn-glass admission-cta__btn-outline"><i class="fas fa-phone ms-2"></i>اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="site-footer">
+        <div class="site-footer__top">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="site-footer__brand">
+                            <span class="site-footer__brand-icon"><i class="fas fa-university"></i></span>
+                            <span class="site-footer__brand-name">جامعة<span>المستقبل</span></span>
+                        </a>
+                        <p class="site-footer__desc">جامعة رائدة تسعى لتقديم تعليم عالي الجودة وبحث علمي متميز، لإعداد كوادر مؤهلة تقود مسيرة التنمية في المملكة.</p>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="site-footer__heading">روابط سريعة</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">عن الجامعة</a></li>
+                            <li><a href="colleges.html">الكليات</a></li>
+                            <li><a href="admission.html">القبول</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                            <li><a href="terms.html">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">خدمات</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="scholarships.html">المنح الدراسية</a></li>
+                            <li><a href="tuition-fees.html">الرسوم الدراسية</a></li>
+                            <li><a href="student-services.html">خدمات الطلاب</a></li>
+                            <li><a href="academic-calendar.html">التقويم الأكاديمي</a></li>
+                            <li><a href="events.html">الفعاليات</a></li>
+                            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                            <li><a href="faculty.html">هيئة التدريس</a></li>
+                            <li><a href="research.html">البحث العلمي</a></li>
+                            <li><a href="library.html">المكتبة</a></li>
+                            <li><a href="news.html">الأخبار</a></li>
+                            <li><a href="courses.html">بوابة الطلاب</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">تواصل معنا</h6>
+                        <ul class="site-footer__contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                            <li><i class="fas fa-phone"></i><span class="en-text" dir="ltr">+966 11 234 5678</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@futureuniversity.edu</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-inner">
+                    <p class="site-footer__copy">&copy; 2026 جامعة المستقبل. جميع الحقوق محفوظة.</p>
+                    <div class="site-footer__legal">
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="terms.html">الشروط والأحكام</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="contact.html">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/uni-main.js"></script>
+</body>
+</html>

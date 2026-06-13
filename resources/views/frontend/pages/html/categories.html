@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة الطلاب — جامعة المستقبل - التصنيفات</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4 align-items-center">
+                <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@futureuniversity.edu</span>
+                <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+966 11 234 5678</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <a href="#" class="top-bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-nav glass-nav py-1">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand text-white fw-bold fs-4 position-relative" href="index.html">
+                <i class="fas fa-university me-2" style="color: var(--accent-color);"></i>
+                <span class="ms-2">جامعة</span><span style="color: var(--accent-color);">المستقبل</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler btn-glass border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-0">
+                    <li class="nav-item"><a class="nav-link ps-3" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">عن الجامعة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="colleges.html">الكليات</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="admission.html">القبول</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="research.html">البحث العلمي</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="library.html">المكتبة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="news.html">الأخبار</a></li>
+                    <li class="nav-item"><a class="nav-link ps-3" href="contact.html">تواصل</a></li>
+                </ul>
+
+                <!-- Navbar Actions -->
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 me-lg-4">
+                    <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button>
+                    <a href="cart.html" class="text-white text-decoration-none position-relative">
+                        <i class="fas fa-shopping-cart fs-5"></i>
+                        <span class="cart-badge">0</span>
+                    </a>
+                    <div class="dropdown portal-dropdown">
+                        <button class="btn btn-accent btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-graduate me-1"></i> بوابة الطلاب
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end portal-menu">
+                            <li><a class="dropdown-item active" href="courses.html"><i class="fas fa-book-open me-2"></i>المقررات</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2"></i>تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus me-2"></i>التسجيل</a></li>
+                        </ul>
+                    </div>
+                    <a href="admission.html" class="btn btn-glass btn-sm px-4">قدم الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="page-hero-content container">
+            <div class="page-hero-icon"><i class="fas fa-th-large"></i></div>
+            <h1 class="page-hero-title">استكشف التصنيفات</h1>
+            <p class="page-hero-subtitle">اختر المجال الذي يناسب طموحاتك وابدأ رحلتك مع أفضل المدربين في الوطن العربي.</p>
+            <nav class="page-hero-breadcrumb" aria-label="breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <i class="fas fa-chevron-left sep"></i>
+                <span class="current">التصنيفات</span>
+            </nav>
+        </div>
+        <div class="page-hero-wave">
+            <svg viewBox="0 0 1440 65" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C360,65 1080,0 1440,30 L1440,65 L0,65 Z" style="fill:var(--page-bg)"/>
+            </svg>
+        </div>
+    </div>
+
+    <main class="container py-4">
+        <div id="toast-container"></div>
+        
+        <!-- Categories Grid -->
+        <div class="row g-4 section-fade-up" id="categories-grid">
+            <div class="col-md-6 col-lg-4">
+                <div class="glass-card p-4 h-100 text-center position-relative overflow-hidden category-card-interactive" data-cat="programming">
+                    <div class="position-absolute bg-accent opacity-25 rounded-circle blur-3xl shape-glow" style="width:100px; height:100px; top:-20px; right:-20px; filter: blur(40px); background:var(--accent-color);"></div>
+                    <i class="fas fa-code fa-4x text-accent mb-4 position-relative z-1 category-icon"></i>
+                    <h4 class="fw-bold text-white position-relative z-1">البرمجة والتطوير</h4>
+                    <p class="text-secondary small position-relative z-1 mb-4">أكثر من 50 كورس في تطوير الويب والتطبيقات والهندسة البرمجية.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4 position-relative z-1 text-nowrap width-100">استعراض الكورسات</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="glass-card p-4 h-100 text-center position-relative overflow-hidden category-card-interactive" data-cat="design">
+                    <div class="position-absolute opacity-25 rounded-circle blur-3xl shape-glow" style="width:100px; height:100px; top:-20px; right:-20px; filter: blur(40px); background:#ff007f;"></div>
+                    <i class="fas fa-paint-brush fa-4x mb-4 position-relative z-1 category-icon" style="color:#ff007f"></i>
+                    <h4 class="fw-bold text-white position-relative z-1">التصميم الجرافيكي</h4>
+                    <p class="text-secondary small position-relative z-1 mb-4">تعلم أسس التصميم الجرافيكي وتصميم واجهات المستخدم الحديثة.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4 position-relative z-1 text-nowrap width-100">استعراض الكورسات</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="glass-card p-4 h-100 text-center position-relative overflow-hidden category-card-interactive" data-cat="marketing">
+                    <div class="position-absolute opacity-25 rounded-circle blur-3xl shape-glow" style="width:100px; height:100px; top:-20px; right:-20px; filter: blur(40px); background:#ffc107;"></div>
+                    <i class="fas fa-bullhorn fa-4x mb-4 position-relative z-1 category-icon text-warning"></i>
+                    <h4 class="fw-bold text-white position-relative z-1">التسويق الرقمي</h4>
+                    <p class="text-secondary small position-relative z-1 mb-4">احترف التسويق عبر منصات التواصل والإعلانات الممولة وتحسين محركات البحث.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4 position-relative z-1 text-nowrap width-100">استعراض الكورسات</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="glass-card p-4 h-100 text-center position-relative overflow-hidden category-card-interactive" data-cat="ai">
+                    <div class="position-absolute opacity-25 rounded-circle blur-3xl shape-glow" style="width:100px; height:100px; top:-20px; right:-20px; filter: blur(40px); background:#00d4ff;"></div>
+                    <i class="fas fa-robot fa-4x mb-4 position-relative z-1 category-icon" style="color: #00d4ff;"></i>
+                    <h4 class="fw-bold text-white position-relative z-1">الذكاء الاصطناعي</h4>
+                    <p class="text-secondary small position-relative z-1 mb-4">انطلق في عالم البيانات وبناء النماذج الذكية بأحدث التقنيات.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4 position-relative z-1 text-nowrap width-100">استعراض الكورسات</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="glass-card p-4 h-100 text-center position-relative overflow-hidden category-card-interactive" data-cat="languages">
+                    <div class="position-absolute opacity-25 rounded-circle blur-3xl shape-glow" style="width:100px; height:100px; top:-20px; right:-20px; filter: blur(40px); background:#28a745;"></div>
+                    <i class="fas fa-language fa-4x mb-4 position-relative z-1 category-icon text-success"></i>
+                    <h4 class="fw-bold text-white position-relative z-1">اللغات</h4>
+                    <p class="text-secondary small position-relative z-1 mb-4">أتقن اللغات الأجنبية الشائعة لتعزيز فرصك المهنية والتواصلية.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4 position-relative z-1 text-nowrap width-100">استعراض الكورسات</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="glass-card p-4 h-100 text-center position-relative overflow-hidden category-card-interactive" data-cat="business">
+                    <div class="position-absolute opacity-25 rounded-circle blur-3xl shape-glow" style="width:100px; height:100px; top:-20px; right:-20px; filter: blur(40px); background:#fd7e14;"></div>
+                    <i class="fas fa-briefcase fa-4x mb-4 position-relative z-1 category-icon" style="color:#fd7e14"></i>
+                    <h4 class="fw-bold text-white position-relative z-1">الأعمال والإدارة</h4>
+                    <p class="text-secondary small position-relative z-1 mb-4">مهارات الإدارة والمحاسبة والقيادة لبناء مسار إداري ناجح.</p>
+                    <button class="btn btn-outline-light rounded-pill px-4 position-relative z-1 text-nowrap width-100">استعراض الكورسات</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dynamic Category Courses Section -->
+        <div id="category-courses-section" class="mt-5 pt-4 d-none">
+            <hr class="border-secondary border-opacity-25 mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold text-white m-0 d-flex align-items-center gap-2">
+                    <i class="fas fa-layer-group text-accent"></i> 
+                    كورسات قسم <span id="current-category-name" class="text-accent ms-2">البرمجة والتطوير</span>
+                </h3>
+                
+                <!-- Filter Tabs -->
+                <ul class="nav nav-pills mt-3 mt-md-0 gap-2" id="cat-filter-tabs">
+                    <li class="nav-item">
+                        <button class="nav-link bg-glass text-white active border border-secondary border-opacity-25" data-filter="all">الكل</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link bg-glass text-white border border-secondary border-opacity-25" data-filter="beginner">مبتدئ</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link bg-glass text-white border border-secondary border-opacity-25" data-filter="intermediate">متوسط</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link bg-glass text-white border border-secondary border-opacity-25" data-filter="advanced">متقدم</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Dynamic Courses Grid here -->
+            <div class="row g-4" id="cat-dynamic-courses">
+                <!-- Populated by JS -->
+            </div>
+            
+            <div class="text-center mt-5 pb-4">
+                <a href="courses.html" class="btn btn-outline-light rounded-pill px-5">تصفح كافة تفاصيل القسم في الكورسات</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+        <footer class="site-footer">
+        <div class="site-footer__top">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="site-footer__brand">
+                            <span class="site-footer__brand-icon"><i class="fas fa-university"></i></span>
+                            <span class="site-footer__brand-name">جامعة<span>المستقبل</span></span>
+                        </a>
+                        <p class="site-footer__desc">جامعة رائدة تسعى لتقديم تعليم عالي الجودة وبحث علمي متميز، لإعداد كوادر مؤهلة تقود مسيرة التنمية في المملكة.</p>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="site-footer__heading">روابط سريعة</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">عن الجامعة</a></li>
+                            <li><a href="colleges.html">الكليات</a></li>
+                            <li><a href="admission.html">القبول</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                            <li><a href="terms.html">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">خدمات</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="scholarships.html">المنح الدراسية</a></li>
+                            <li><a href="tuition-fees.html">الرسوم الدراسية</a></li>
+                            <li><a href="student-services.html">خدمات الطلاب</a></li>
+                            <li><a href="academic-calendar.html">التقويم الأكاديمي</a></li>
+                            <li><a href="events.html">الفعاليات</a></li>
+                            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                            <li><a href="faculty.html">هيئة التدريس</a></li>
+                            <li><a href="research.html">البحث العلمي</a></li>
+                            <li><a href="library.html">المكتبة</a></li>
+                            <li><a href="news.html">الأخبار</a></li>
+                            <li><a href="courses.html">بوابة الطلاب</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">تواصل معنا</h6>
+                        <ul class="site-footer__contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                            <li><i class="fas fa-phone"></i><span class="en-text" dir="ltr">+966 11 234 5678</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@futureuniversity.edu</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-inner">
+                    <p class="site-footer__copy">&copy; 2026 جامعة المستقبل. جميع الحقوق محفوظة.</p>
+                    <div class="site-footer__legal">
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="terms.html">الشروط والأحكام</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="contact.html">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/uni-main.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

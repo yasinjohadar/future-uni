@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">تفاصيل العضو | جامعة المستقبل</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800&family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="staff-detail-page">
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4 align-items-center">
+                <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@futureuniversity.edu</span>
+                <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+966 11 234 5678</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <a href="#" class="top-bar-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="top-bar-social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-nav glass-nav py-1">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html">
+                <i class="fas fa-university me-2" style="color: var(--accent-color);"></i>
+                <span class="ms-2">جامعة</span><span style="color: var(--accent-color);">المستقبل</span>
+            </a>
+            <button class="navbar-toggler btn-glass border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-0">
+                    <li class="nav-item"><a class="nav-link ps-3" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">عن الجامعة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="colleges.html">الكليات</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="admission.html">القبول</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="research.html">البحث العلمي</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="library.html">المكتبة</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="news.html">الأخبار</a></li>
+                    <li class="nav-item"><a class="nav-link ps-3" href="contact.html">تواصل</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 me-lg-4">
+                    <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button>
+                    <div class="dropdown portal-dropdown">
+                        <button class="btn btn-glass btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-graduate me-1"></i> بوابة الطلاب
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end portal-menu">
+                            <li><a class="dropdown-item" href="courses.html"><i class="fas fa-book-open me-2"></i>المقررات</a></li>
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2"></i>تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus me-2"></i>التسجيل</a></li>
+                        </ul>
+                    </div>
+                    <a href="admission.html" class="btn btn-accent btn-sm px-4">قدم الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="staffDetailContent"></main>
+
+        <footer class="site-footer">
+        <div class="site-footer__top">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="site-footer__brand">
+                            <span class="site-footer__brand-icon"><i class="fas fa-university"></i></span>
+                            <span class="site-footer__brand-name">جامعة<span>المستقبل</span></span>
+                        </a>
+                        <p class="site-footer__desc">جامعة رائدة تسعى لتقديم تعليم عالي الجودة وبحث علمي متميز، لإعداد كوادر مؤهلة تقود مسيرة التنمية في المملكة.</p>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="site-footer__heading">روابط سريعة</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">عن الجامعة</a></li>
+                            <li><a href="colleges.html">الكليات</a></li>
+                            <li><a href="admission.html">القبول</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                            <li><a href="terms.html">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">خدمات</h6>
+                        <ul class="site-footer__links">
+                            <li><a href="scholarships.html">المنح الدراسية</a></li>
+                            <li><a href="tuition-fees.html">الرسوم الدراسية</a></li>
+                            <li><a href="student-services.html">خدمات الطلاب</a></li>
+                            <li><a href="academic-calendar.html">التقويم الأكاديمي</a></li>
+                            <li><a href="events.html">الفعاليات</a></li>
+                            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                            <li><a href="faculty.html">هيئة التدريس</a></li>
+                            <li><a href="research.html">البحث العلمي</a></li>
+                            <li><a href="library.html">المكتبة</a></li>
+                            <li><a href="news.html">الأخبار</a></li>
+                            <li><a href="courses.html">بوابة الطلاب</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="site-footer__heading">تواصل معنا</h6>
+                        <ul class="site-footer__contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>الرياض، المملكة العربية السعودية</span></li>
+                            <li><i class="fas fa-phone"></i><span class="en-text" dir="ltr">+966 11 234 5678</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@futureuniversity.edu</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-inner">
+                    <p class="site-footer__copy">&copy; 2026 جامعة المستقبل. جميع الحقوق محفوظة.</p>
+                    <div class="site-footer__legal">
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="terms.html">الشروط والأحكام</a>
+                        <span class="site-footer__dot" aria-hidden="true">·</span>
+                        <a href="contact.html">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/uni-main.js"></script>
+    <script>
+        const staffDB = {
+            1: {
+                name: 'أ.د. عبدالله الراشد',
+                position: 'رئيس الجامعة',
+                college: 'الإدارة العليا',
+                initials: 'ع.ر',
+                icon: 'fa-user-tie',
+                bio: 'خبير في الإدارة الأكاديمية والتخطيط الاستراتيجي بخبرة تتجاوز 30 عاماً في التعليم العالي. قاد العديد من مبادرات التطوير الجامعي وحصل على جوائز دولية في التميز الأكاديمي.',
+                email: 'a.alrashed@futureuniversity.edu',
+                phone: '+966 11 234 5601',
+                office: 'المبنى الإداري - الطابق 5 - مكتب 501',
+                education: [
+                    { year: '1990', degree: 'بكالوريوس إدارة تعليم', institution: 'جامعة الملك سعود' },
+                    { year: '1995', degree: 'ماجستير إدارة تعليم عالي', institution: 'جامعة ولاية بنسلفانيا، USA' },
+                    { year: '2000', degree: 'دكتوراه في التخطيط الاستراتيجي', institution: 'جامعة هارفارد، USA' }
+                ],
+                experience: [
+                    { year: '2018 - الآن', role: 'رئيس جامعة المستقبل', desc: 'قيادة الجامعة وتحقيق تصنيفات عالمية متقدمة' },
+                    { year: '2010 - 2018', role: 'نائب الرئيس للشؤون الأكاديمية', desc: 'تطوير البرامج الأكاديمية والحصول على الاعتمادات الدولية' },
+                    { year: '2002 - 2010', role: 'عميد كلية التربية', desc: 'إدارة الكلية وتطوير المناهج الدراسية' },
+                    { year: '1995 - 2002', role: 'عضو هيئة تدريس', desc: 'التدريس والبحث في مجال الإدارة التعليمية' }
+                ],
+                publications: [
+                    { title: 'التخطيط الاستراتيجي في الجامعات العربية', journal: 'مجلة التعليم العالي', year: '2024' },
+                    { title: 'نماذج القيادة الأكاديمية في القرن الحادي والعشرين', journal: 'Journal of Higher Education', year: '2023' },
+                    { title: 'تأثير الاعتماد الدولي على جودة التعليم', journal: 'Arab Journal of Education', year: '2022' },
+                    { title: 'إدارة التغيير في المؤسسات الأكاديمية', journal: 'International Journal of Educational Management', year: '2021' }
+                ],
+                skills: [
+                    { name: 'الإدارة الاستراتيجية', level: 95 },
+                    { name: 'التخطيط الأكاديمي', level: 90 },
+                    { name: 'القيادة التنظيمية', level: 92 },
+                    { name: 'إدارة الجودة الشاملة', level: 88 },
+                    { name: 'البحث العلمي', level: 85 }
+                ],
+                stats: { publications: 45, citations: 1200, hIndex: 18, experience: 30 },
+                awards: ['جائزة التميز في الإدارة الأكاديمية 2023', 'وسام الملك عبدالعزيز من الدرجة الأولى 2020', 'جائزة أفضل بحث في التعليم العالي 2019']
+            },
+            2: {
+                name: 'أ.د. فاطمة الزهراني',
+                position: 'نائب الرئيس للشؤون الأكاديمية',
+                college: 'الإدارة العليا',
+                initials: 'ف.ز',
+                icon: 'fa-user-tie',
+                bio: 'متخصصة في تطوير المناهج والبرامج الأكاديمية المعتمدة دولياً. قادت عملية اعتماد أكثر من 20 برنامجاً أكاديمياً من هيئات اعتماد عالمية.',
+                email: 'f.alzahrani@futureuniversity.edu',
+                phone: '+966 11 234 5602',
+                office: 'المبنى الإداري - الطابق 4 - مكتب 401',
+                education: [
+                    { year: '1992', degree: 'بكالوريوس تربية', institution: 'جامعة الملك عبدالعزيز' },
+                    { year: '1998', degree: 'ماجستير تطوير مناهج', institution: 'جامعة لندن، UK' },
+                    { year: '2003', degree: 'دكتوراه في تطوير المناهج', institution: 'جامعة كولومبيا، USA' }
+                ],
+                experience: [
+                    { year: '2019 - الآن', role: 'نائب الرئيس للشؤون الأكاديمية', desc: 'الإشراف على جميع البرامج الأكاديمية والاعتمادات' },
+                    { year: '2012 - 2019', role: 'وكيلة الجامعة للتطوير', desc: 'قيادة مبادرات التطوير الأكاديمي والجودة' },
+                    { year: '2005 - 2012', role: 'رئيسة قسم المناهج', desc: 'إدارة تطوير المناهج والبرامج الدراسية' },
+                    { year: '1998 - 2005', role: 'عضو هيئة تدريس', desc: 'التدريس في مجال تطوير المناهج' }
+                ],
+                publications: [
+                    { title: 'معايير الاعتماد الأكاديمي الدولية', journal: 'مجلة الجودة في التعليم', year: '2024' },
+                    { title: 'تطوير المناهج القائمة على الكفايات', journal: 'Curriculum Studies Journal', year: '2023' },
+                    { title: 'التعلم القائم على النتائج في التعليم العالي', journal: 'Assessment & Evaluation in Higher Education', year: '2022' }
+                ],
+                skills: [
+                    { name: 'تطوير المناهج', level: 96 },
+                    { name: 'الاعتماد الأكاديمي', level: 94 },
+                    { name: 'ضمان الجودة', level: 90 },
+                    { name: 'التقييم التربوي', level: 88 },
+                    { name: 'البحث العلمي', level: 82 }
+                ],
+                stats: { publications: 38, citations: 850, hIndex: 14, experience: 26 },
+                awards: ['جائزة التميز في تطوير المناهج 2023', 'جائزة أفضل بحث تربوي 2021']
+            },
+            3: {
+                name: 'أ.د. محمد العتيبي',
+                position: 'نائب الرئيس للبحث العلمي',
+                college: 'الإدارة العليا',
+                initials: 'م.ع',
+                icon: 'fa-user-tie',
+                bio: 'باحث متميز في مجال الذكاء الاصطناعي وتطبيقاته في التعليم. نشر أكثر من 60 بحثاً في مجلات عالمية مصنفة وقاد مشاريع بحثية ممولة من مدينة الملك عبدالعزيز للعلوم والتقنية.',
+                email: 'm.alotaibi@futureuniversity.edu',
+                phone: '+966 11 234 5603',
+                office: 'المبنى الإداري - الطابق 4 - مكتب 402',
+                education: [
+                    { year: '1994', degree: 'بكالوريوس علوم حاسب', institution: 'جامعة الملك فهد للبترول والمعادن' },
+                    { year: '1999', degree: 'ماجستير ذكاء اصطناعي', institution: 'MIT، USA' },
+                    { year: '2004', degree: 'دكتوراه في تعلم الآلة', institution: 'جامعة ستانفورد، USA' }
+                ],
+                experience: [
+                    { year: '2020 - الآن', role: 'نائب الرئيس للبحث العلمي', desc: 'إدارة البحث العلمي ومراكز الأبحاث في الجامعة' },
+                    { year: '2012 - 2020', role: 'مدير مركز أبحاث الذكاء الاصطناعي', desc: 'تأسيس وإدارة المركز وتمويل المشاريع البحثية' },
+                    { year: '2004 - 2012', role: 'أستاذ مشارك', desc: 'التدريس والبحث في الذكاء الاصطناعي' }
+                ],
+                publications: [
+                    { title: 'Deep Learning Approaches for Arabic NLP', journal: 'IEEE Transactions on AI', year: '2024' },
+                    { title: 'AI in Higher Education: A Systematic Review', journal: 'Computers & Education', year: '2023' },
+                    { title: 'Transformer Models for Low-Resource Languages', journal: 'Nature Machine Intelligence', year: '2023' },
+                    { title: 'Ethical AI in Academic Settings', journal: 'AI & Society', year: '2022' }
+                ],
+                skills: [
+                    { name: 'الذكاء الاصطناعي', level: 97 },
+                    { name: 'تعلم الآلة', level: 95 },
+                    { name: 'إدارة البحث العلمي', level: 90 },
+                    { name: 'معالجة اللغات الطبيعية', level: 92 },
+                    { name: 'الكتابة الأكاديمية', level: 88 }
+                ],
+                stats: { publications: 62, citations: 2400, hIndex: 22, experience: 22 },
+                awards: ['جائزة الملك فيصل للعلوم 2023', 'جائزة أفضل بحث في AI 2022', 'زمالة IEEE 2020']
+            },
+            4: {
+                name: 'د. نورة القحطاني',
+                position: 'عميدة كلية الهندسة',
+                college: 'كلية الهندسة',
+                initials: 'ن.ق',
+                icon: 'fa-user-tie',
+                bio: 'خبيرة في الهندسة المدنية والتصميم المستدام. حصلت على اعتماد ABET لبرامج الكلية وقادت مشاريع بحثية في مجال البناء الأخضر.',
+                email: 'n.alqahtani@futureuniversity.edu',
+                phone: '+966 11 234 5604',
+                office: 'مبنى كلية الهندسة - الطابق 3 - مكتب 301',
+                education: [
+                    { year: '1996', degree: 'بكالوريوس هندسة مدنية', institution: 'جامعة الملك سعود' },
+                    { year: '2001', degree: 'ماجستير هندسة إنشائية', institution: 'جامعة كاليفورنيا، Berkeley' },
+                    { year: '2006', degree: 'دكتوراه في الهندسة المستدامة', institution: 'جامعة كامبريدج، UK' }
+                ],
+                experience: [
+                    { year: '2018 - الآن', role: 'عميدة كلية الهندسة', desc: 'إدارة الكلية والحصول على اعتماد ABET' },
+                    { year: '2012 - 2018', role: 'رئيسة قسم الهندسة المدنية', desc: 'تطوير البرامج الدراسية والمختبرات' },
+                    { year: '2006 - 2012', role: 'أستاذ مساعد', desc: 'التدريس والبحث في الهندسة المستدامة' }
+                ],
+                publications: [
+                    { title: 'Sustainable Building Materials in Hot Climates', journal: 'Construction and Building Materials', year: '2024' },
+                    { title: 'Green Concrete: A Comprehensive Review', journal: 'Journal of Cleaner Production', year: '2023' },
+                    { title: 'Seismic Design of High-Rise Buildings', journal: 'Earthquake Engineering', year: '2022' }
+                ],
+                skills: [
+                    { name: 'الهندسة المدنية', level: 95 },
+                    { name: 'التصميم المستدام', level: 92 },
+                    { name: 'إدارة الكليات', level: 88 },
+                    { name: 'هندسة الزلازل', level: 85 },
+                    { name: 'البحث العلمي', level: 90 }
+                ],
+                stats: { publications: 35, citations: 780, hIndex: 13, experience: 20 },
+                awards: ['جائزة التميز في الهندسة المستدامة 2023', 'جائزة أفضل عميدة 2021']
+            },
+            5: {
+                name: 'أ.د. خالد الدوسري',
+                position: 'عميد كلية الطب',
+                college: 'كلية الطب',
+                initials: 'خ.د',
+                icon: 'fa-user-tie',
+                bio: 'استشاري في الجراحة العامة وزراعة الأعضاء. أجرى أكثر من 3000 عملية جراحية وشارك في برامج تدريبية دولية.',
+                email: 'k.aldosari@futureuniversity.edu',
+                phone: '+966 11 234 5605',
+                office: 'مبنى كلية الطب - الطابق 2 - مكتب 201',
+                education: [
+                    { year: '1990', degree: 'بكالوريوس طب وجراحة', institution: 'جامعة الملك عبدالعزيز' },
+                    { year: '1996', degree: 'زمالة جراحة عامة', institution: 'الكلية الملكية للجراحين، UK' },
+                    { year: '2000', degree: 'زمالة زراعة أعضاء', institution: 'جامعة جونز هوبكنز، USA' }
+                ],
+                experience: [
+                    { year: '2017 - الآن', role: 'عميد كلية الطب', desc: 'إدارة الكلية وتطوير البرامج الطبية' },
+                    { year: '2010 - 2017', role: 'رئيس قسم الجراحة', desc: 'إدارة القسم والإشراف على العمليات الجراحية' },
+                    { year: '2000 - 2010', role: 'استشاري جراحة', desc: 'ممارسة الجراحة العامة وزراعة الأعضاء' }
+                ],
+                publications: [
+                    { title: 'Advances in Liver Transplantation', journal: 'The Lancet', year: '2024' },
+                    { title: 'Minimally Invasive Surgery Techniques', journal: 'Annals of Surgery', year: '2023' },
+                    { title: 'Organ Donation in the Arab World', journal: 'Transplantation', year: '2022' }
+                ],
+                skills: [
+                    { name: 'الجراحة العامة', level: 98 },
+                    { name: 'زراعة الأعضاء', level: 95 },
+                    { name: 'إدارة الكليات الطبية', level: 88 },
+                    { name: 'التدريب الجراحي', level: 92 },
+                    { name: 'البحث الطبي', level: 85 }
+                ],
+                stats: { publications: 40, citations: 950, hIndex: 16, experience: 26 },
+                awards: ['جائزة التميز في الجراحة 2023', 'وسام الصحة العالمي 2021']
+            },
+            6: {
+                name: 'د. سارة الشمري',
+                position: 'عميدة كلية علوم الحاسب',
+                college: 'كلية علوم الحاسب',
+                initials: 'س.ش',
+                icon: 'fa-user-tie',
+                bio: 'متخصصة في أمن المعلومات والحوسبة السحابية. قادت مشاريع بحثية ممولة من أرامكو السعودية وشركة STC.',
+                email: 's.alshamari@futureuniversity.edu',
+                phone: '+966 11 234 5606',
+                office: 'مبنى كلية علوم الحاسب - الطابق 2 - مكتب 201',
+                education: [
+                    { year: '1998', degree: 'بكالوريوس علوم حاسب', institution: 'جامعة الملك سعود' },
+                    { year: '2003', degree: 'ماجستير أمن معلومات', institution: 'جامعة كارنيجي ميلون، USA' },
+                    { year: '2008', degree: 'دكتوراه في الحوسبة السحابية', institution: 'جامعة MIT، USA' }
+                ],
+                experience: [
+                    { year: '2019 - الآن', role: 'عميدة كلية علوم الحاسب', desc: 'إدارة الكلية وتطوير برامج الحوسبة' },
+                    { year: '2012 - 2019', role: 'رئيسة قسم أمن المعلومات', desc: 'تطوير برامج الأمن السيبراني' },
+                    { year: '2008 - 2012', role: 'أستاذ مساعد', desc: 'التدريس والبحث في أمن المعلومات' }
+                ],
+                publications: [
+                    { title: 'Cloud Security in Enterprise Environments', journal: 'IEEE Transactions on Cloud Computing', year: '2024' },
+                    { title: 'Zero Trust Architecture for Universities', journal: 'Computers & Security', year: '2023' },
+                    { title: 'AI-Powered Threat Detection Systems', journal: 'ACM Computing Surveys', year: '2022' }
+                ],
+                skills: [
+                    { name: 'أمن المعلومات', level: 96 },
+                    { name: 'الحوسبة السحابية', level: 93 },
+                    { name: 'إدارة الكليات', level: 85 },
+                    { name: 'الأمن السيبراني', level: 94 },
+                    { name: 'البحث العلمي', level: 88 }
+                ],
+                stats: { publications: 32, citations: 680, hIndex: 12, experience: 18 },
+                awards: ['جائزة التميز في الأمن السيبراني 2023', 'جائزة أفضل باحثة 2021']
+            },
+            7: {
+                name: 'أ.د. أحمد الحربي',
+                position: 'عميد كلية إدارة الأعمال',
+                college: 'كلية إدارة الأعمال',
+                initials: 'أ.ح',
+                icon: 'fa-user-tie',
+                bio: 'خبير في الإدارة الاستراتيجية والتطوير المؤسسي. حاصل على اعتماد AACSB للكلية وقاد شراكات مع جامعات عالمية.',
+                email: 'a.alharbi@futureuniversity.edu',
+                phone: '+966 11 234 5607',
+                office: 'مبنى كلية إدارة الأعمال - الطابق 3 - مكتب 301',
+                education: [
+                    { year: '1993', degree: 'بكالوريوس إدارة أعمال', institution: 'جامعة الملك سعود' },
+                    { year: '1998', degree: 'ماجستير إدارة', institution: 'جامعة هارفارد، USA' },
+                    { year: '2003', degree: 'دكتوراه في الإدارة الاستراتيجية', institution: 'جامعة أكسفورد، UK' }
+                ],
+                experience: [
+                    { year: '2017 - الآن', role: 'عميد كلية إدارة الأعمال', desc: 'إدارة الكلية والحصول على اعتماد AACSB' },
+                    { year: '2010 - 2017', role: 'رئيس قسم الإدارة', desc: 'تطوير البرامج الإدارية' },
+                    { year: '2003 - 2010', role: 'أستاذ مساعد', desc: 'التدريس في الإدارة الاستراتيجية' }
+                ],
+                publications: [
+                    { title: 'Strategic Leadership in Arab Universities', journal: 'Journal of Management Studies', year: '2024' },
+                    { title: 'Digital Transformation in Business Education', journal: 'Academy of Management', year: '2023' },
+                    { title: 'Organizational Change in Higher Education', journal: 'Strategic Management Journal', year: '2022' }
+                ],
+                skills: [
+                    { name: 'الإدارة الاستراتيجية', level: 95 },
+                    { name: 'التطوير المؤسسي', level: 92 },
+                    { name: 'إدارة الكليات', level: 90 },
+                    { name: 'ريادة الأعمال', level: 88 },
+                    { name: 'البحث العلمي', level: 85 }
+                ],
+                stats: { publications: 42, citations: 1100, hIndex: 17, experience: 23 },
+                awards: ['جائزة التميز في إدارة الأعمال 2023', 'جائزة أفضل عميد 2022']
+            },
+            8: {
+                name: 'د. منال العنزي',
+                position: 'عميدة كلية الصيدلة',
+                college: 'كلية الصيدلة',
+                initials: 'م.ع',
+                icon: 'fa-user-tie',
+                bio: 'باحثة في مجال تطوير الأدوية والعلاج الجيني. نشرت أبحاثها في مجلات Nature و Science.',
+                email: 'm.alenezi@futureuniversity.edu',
+                phone: '+966 11 234 5608',
+                office: 'مبنى كلية الصيدلة - الطابق 2 - مكتب 201',
+                education: [
+                    { year: '1995', degree: 'بكالوريوس صيدلة', institution: 'جامعة الملك سعود' },
+                    { year: '2000', degree: 'ماجستير كيمياء صيدلية', institution: 'جامعة لندن، UK' },
+                    { year: '2005', degree: 'دكتوراه في تطوير الأدوية', institution: 'جامعة جونز هوبكنز، USA' }
+                ],
+                experience: [
+                    { year: '2018 - الآن', role: 'عميدة كلية الصيدلة', desc: 'إدارة الكلية وتطوير برامج الصيدلة السريرية' },
+                    { year: '2010 - 2018', role: 'رئيسة قسم الكيمياء الصيدلية', desc: 'تطوير برامج البحث في الأدوية' },
+                    { year: '2005 - 2010', role: 'أستاذ مساعد', desc: 'التدريس والبحث في تطوير الأدوية' }
+                ],
+                publications: [
+                    { title: 'Gene Therapy for Genetic Disorders', journal: 'Nature Medicine', year: '2024' },
+                    { title: 'Novel Drug Delivery Systems', journal: 'Science', year: '2023' },
+                    { title: 'Targeted Cancer Therapeutics', journal: 'Nature Reviews Drug Discovery', year: '2022' }
+                ],
+                skills: [
+                    { name: 'تطوير الأدوية', level: 97 },
+                    { name: 'العلاج الجيني', level: 94 },
+                    { name: 'إدارة الكليات', level: 88 },
+                    { name: 'الكيمياء الصيدلية', level: 95 },
+                    { name: 'البحث العلمي', level: 92 }
+                ],
+                stats: { publications: 48, citations: 1800, hIndex: 20, experience: 21 },
+                awards: ['جائزة الملك فيصل للعلوم الطبية 2024', 'جائزة أفضل باحثة صيدلانية 2022']
+            },
+            9: {
+                name: 'أ.د. فهد المطيري',
+                position: 'عميد كلية العلوم',
+                college: 'كلية العلوم',
+                initials: 'ف.م',
+                icon: 'fa-user-tie',
+                bio: 'متخصص في الفيزياء التطبيقية والطاقة المتجددة. قاد مشاريع بحثية في الطاقة الشمسية بالتعاون مع مدينة الملك عبدالعزيز للعلوم والتقنية.',
+                email: 'f.almutairi@futureuniversity.edu',
+                phone: '+966 11 234 5609',
+                office: 'مبنى كلية العلوم - الطابق 3 - مكتب 301',
+                education: [
+                    { year: '1992', degree: 'بكالوريوس فيزياء', institution: 'جامعة الملك سعود' },
+                    { year: '1997', degree: 'ماجستير فيزياء تطبيقية', institution: 'جامعة كامبريدج، UK' },
+                    { year: '2002', degree: 'دكتوراه في الطاقة المتجددة', institution: 'جامعة ستانفورد، USA' }
+                ],
+                experience: [
+                    { year: '2016 - الآن', role: 'عميد كلية العلوم', desc: 'إدارة الكلية وتطوير برامج العلوم الأساسية' },
+                    { year: '2008 - 2016', role: 'رئيس قسم الفيزياء', desc: 'تطوير برامج الفيزياء التطبيقية' },
+                    { year: '2002 - 2008', role: 'أستاذ مساعد', desc: 'التدريس والبحث في الطاقة المتجددة' }
+                ],
+                publications: [
+                    { title: 'Perovskite Solar Cells: Next Generation', journal: 'Nature Energy', year: '2024' },
+                    { title: 'Renewable Energy in the Middle East', journal: 'Renewable and Sustainable Energy Reviews', year: '2023' },
+                    { title: 'Nanomaterials for Energy Storage', journal: 'Advanced Materials', year: '2022' }
+                ],
+                skills: [
+                    { name: 'الفيزياء التطبيقية', level: 95 },
+                    { name: 'الطاقة المتجددة', level: 93 },
+                    { name: 'إدارة الكليات', level: 88 },
+                    { name: 'النانوتكنولوجي', level: 90 },
+                    { name: 'البحث العلمي', level: 92 }
+                ],
+                stats: { publications: 50, citations: 1500, hIndex: 19, experience: 24 },
+                awards: ['جائزة التميز في الطاقة المتجددة 2023', 'جائزة أفضل بحث فيزيائي 2021']
+            },
+            10: {
+                name: 'د. هند السبيعي',
+                position: 'عميدة كلية التربية',
+                college: 'كلية التربية',
+                initials: 'ه.س',
+                icon: 'fa-user-tie',
+                bio: 'خبيرة في المناهج التعليمية والتربية الخاصة. طورت برامج دمج ذوي الاحتياجات الخاصة في التعليم العام.',
+                email: 'h.alsubaie@futureuniversity.edu',
+                phone: '+966 11 234 5610',
+                office: 'مبنى كلية التربية - الطابق 2 - مكتب 201',
+                education: [
+                    { year: '1994', degree: 'بكالوريوس تربية خاصة', institution: 'جامعة الملك سعود' },
+                    { year: '1999', degree: 'ماجستير مناهج وطرق تدريس', institution: 'جامعة لندن، UK' },
+                    { year: '2004', degree: 'دكتوراه في التربية الخاصة', institution: 'جامعة كولومبيا، USA' }
+                ],
+                experience: [
+                    { year: '2017 - الآن', role: 'عميدة كلية التربية', desc: 'إدارة الكلية وتطوير برامج إعداد المعلمين' },
+                    { year: '2010 - 2017', role: 'رئيسة قسم التربية الخاصة', desc: 'تطوير برامج دمج ذوي الاحتياجات الخاصة' },
+                    { year: '2004 - 2010', role: 'أستاذ مساعد', desc: 'التدريس والبحث في التربية الخاصة' }
+                ],
+                publications: [
+                    { title: 'Inclusive Education in Arab Countries', journal: 'International Journal of Inclusive Education', year: '2024' },
+                    { title: 'Teacher Preparation for Special Needs', journal: 'Teaching and Teacher Education', year: '2023' },
+                    { title: 'Technology in Special Education', journal: 'Computers & Education', year: '2022' }
+                ],
+                skills: [
+                    { name: 'التربية الخاصة', level: 96 },
+                    { name: 'تطوير المناهج', level: 92 },
+                    { name: 'إدارة الكليات', level: 88 },
+                    { name: 'دمج التعليم', level: 94 },
+                    { name: 'البحث التربوي', level: 85 }
+                ],
+                stats: { publications: 30, citations: 520, hIndex: 11, experience: 22 },
+                awards: ['جائزة التميز في التربية الخاصة 2023', 'جائزة أفضل عميدة 2021']
+            },
+            11: {
+                name: 'أ.د. سلطان الرشيدي',
+                position: 'عميد كلية الحقوق',
+                college: 'كلية الحقوق',
+                initials: 'س.ر',
+                icon: 'fa-user-tie',
+                bio: 'متخصص في القانون الدولي والتحكيم التجاري. عمل مستشاراً قانونياً في عدة منظمات دولية.',
+                email: 's.alrashidi@futureuniversity.edu',
+                phone: '+966 11 234 5611',
+                office: 'مبنى كلية الحقوق - الطابق 2 - مكتب 201',
+                education: [
+                    { year: '1991', degree: 'بكالوريوس قانون', institution: 'جامعة الملك سعود' },
+                    { year: '1996', degree: 'ماجستير قانون دولي', institution: 'جامعة أكسفورد، UK' },
+                    { year: '2001', degree: 'دكتوراه في القانون التجاري الدولي', institution: 'جامعة هارفارد، USA' }
+                ],
+                experience: [
+                    { year: '2016 - الآن', role: 'عميد كلية الحقوق', desc: 'إدارة الكلية وتطوير برامج القانون' },
+                    { year: '2008 - 2016', role: 'رئيس قسم القانون الدولي', desc: 'تطوير برامج القانون الدولي والتحكيم' },
+                    { year: '2001 - 2008', role: 'أستاذ مساعد ومستشار قانوني', desc: 'التدريس والاستشارات القانونية الدولية' }
+                ],
+                publications: [
+                    { title: 'International Commercial Arbitration in the GCC', journal: 'Journal of International Arbitration', year: '2024' },
+                    { title: 'Islamic Finance and International Law', journal: 'International and Comparative Law Quarterly', year: '2023' },
+                    { title: 'Legal Frameworks for Digital Commerce', journal: 'Harvard International Law Journal', year: '2022' }
+                ],
+                skills: [
+                    { name: 'القانون الدولي', level: 96 },
+                    { name: 'التحكيم التجاري', level: 94 },
+                    { name: 'إدارة الكليات', level: 88 },
+                    { name: 'القانون التجاري', level: 92 },
+                    { name: 'البحث القانوني', level: 90 }
+                ],
+                stats: { publications: 36, citations: 720, hIndex: 14, experience: 25 },
+                awards: ['جائزة التميز في القانون الدولي 2023', 'جائزة أفضل محكم 2021']
+            },
+            12: {
+                name: 'د. ريم البلوي',
+                position: 'عميدة كلية التصاميم',
+                college: 'كلية التصاميم',
+                initials: 'ر.ب',
+                icon: 'fa-user-tie',
+                bio: 'مصممة محترفة في التصميم الجرافيكي والهوية البصرية. فازت بجوائز دولية في التصميم وأقامت معارض فنية متعددة.',
+                email: 'r.albalawi@futureuniversity.edu',
+                phone: '+966 11 234 5612',
+                office: 'مبنى كلية التصاميم - الطابق 2 - مكتب 201',
+                education: [
+                    { year: '1997', degree: 'بكالوريوس تصميم جرافيكي', institution: 'جامعة الملك عبدالعزيز' },
+                    { year: '2002', degree: 'ماجستير تصميم بصري', institution: 'جامعة Parsons، USA' },
+                    { year: '2007', degree: 'دكتوراه في التصميم الإبداعي', institution: 'جامعة RCA لندن، UK' }
+                ],
+                experience: [
+                    { year: '2018 - الآن', role: 'عميدة كلية التصاميم', desc: 'إدارة الكلية وتطوير برامج التصميم' },
+                    { year: '2010 - 2018', role: 'رئيسة قسم التصميم الجرافيكي', desc: 'تطوير برامج التصميم والهوية البصرية' },
+                    { year: '2007 - 2010', role: 'أستاذ مساعد ومصممة', desc: 'التدريس والعمل في التصميم الاحترافي' }
+                ],
+                publications: [
+                    { title: 'Arabic Typography in Digital Age', journal: 'Design Issues', year: '2024' },
+                    { title: 'Visual Identity in Arab Brands', journal: 'Journal of Brand Management', year: '2023' },
+                    { title: 'Cultural Elements in Modern Design', journal: 'Design Journal', year: '2022' }
+                ],
+                skills: [
+                    { name: 'التصميم الجرافيكي', level: 97 },
+                    { name: 'الهوية البصرية', level: 95 },
+                    { name: 'إدارة الكليات', level: 85 },
+                    { name: 'التصميم الرقمي', level: 92 },
+                    { name: 'البحث في التصميم', level: 80 }
+                ],
+                stats: { publications: 22, citations: 350, hIndex: 9, experience: 19 },
+                awards: ['جائزة التميز في التصميم العربي 2023', 'جائزة أفضل معرض فني 2022', 'جائزة الإبداع في التصميم 2021']
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const staffId = parseInt(params.get('id')) || 1;
+            const staff = staffDB[staffId];
+
+            if (!staff) {
+                document.getElementById('staffDetailContent').innerHTML = `
+                    <section class="page-hero">
+                        <div class="container">
+                            <div class="page-hero-content">
+                                <div class="page-hero-icon"><i class="fas fa-user-slash"></i></div>
+                                <h1 class="page-hero-title">العضو غير موجود</h1>
+                                <p class="page-hero-subtitle">عذراً، لم يتم العثور على العضو المطلوب</p>
+                                <div class="page-hero-breadcrumb">
+                                    <a href="index.html">الرئيسية</a>
+                                    <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                                    <a href="staff.html">الهيئة الإدارية</a>
+                                    <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                                    <span class="current">غير موجود</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="staff-detail-section">
+                        <div class="container text-center">
+                            <a href="staff.html" class="btn btn-accent px-5">العودة للهيئة الإدارية</a>
+                        </div>
+                    </section>`;
+                return;
+            }
+
+            document.getElementById('pageTitle').textContent = staff.name + ' | جامعة المستقبل';
+
+            let educationHTML = '';
+            staff.education.forEach(e => {
+                educationHTML += `
+                    <div class="about-timeline__item">
+                        <span class="about-timeline__year">${e.year}</span>
+                        <div>
+                            <h6 class="fw-bold mb-1">${e.degree}</h6>
+                            <p class="text-secondary small mb-0"><i class="fas fa-university text-accent me-1"></i>${e.institution}</p>
+                        </div>
+                    </div>`;
+            });
+
+            let experienceHTML = '';
+            staff.experience.forEach(e => {
+                experienceHTML += `
+                    <div class="about-timeline__item">
+                        <span class="about-timeline__year en-text">${e.year}</span>
+                        <div>
+                            <h6 class="fw-bold mb-1">${e.role}</h6>
+                            <p class="text-secondary small mb-0">${e.desc}</p>
+                        </div>
+                    </div>`;
+            });
+
+            let publicationsHTML = '';
+            staff.publications.forEach(p => {
+                publicationsHTML += `
+                    <div class="staff-detail-pub">
+                        <div class="staff-detail-pub__title">${p.title}</div>
+                        <div class="staff-detail-pub__journal"><i class="fas fa-book ms-1"></i>${p.journal}</div>
+                        <div class="staff-detail-pub__year"><i class="far fa-calendar-alt ms-1"></i>${p.year}</div>
+                    </div>`;
+            });
+
+            let skillsHTML = '';
+            staff.skills.forEach(s => {
+                skillsHTML += `
+                    <div class="staff-detail-skill">
+                        <div class="staff-detail-skill__head">
+                            <span>${s.name}</span>
+                            <span>${s.level}%</span>
+                        </div>
+                        <div class="staff-detail-skill__bar">
+                            <div class="staff-detail-skill__fill" style="width: ${s.level}%"></div>
+                        </div>
+                    </div>`;
+            });
+
+            let awardsHTML = '';
+            staff.awards.forEach(a => {
+                awardsHTML += `
+                    <div class="staff-detail-award">
+                        <i class="fas fa-award"></i>
+                        <span>${a}</span>
+                    </div>`;
+            });
+
+            const html = `
+                <section class="page-hero">
+                    <div class="container">
+                        <div class="page-hero-content">
+                            <div class="page-hero-icon"><i class="fas ${staff.icon}"></i></div>
+                            <h1 class="page-hero-title">${staff.name}</h1>
+                            <p class="page-hero-subtitle">${staff.position} · <i class="fas fa-building-columns ms-1"></i> ${staff.college}</p>
+                            <div class="page-hero-breadcrumb">
+                                <a href="index.html">الرئيسية</a>
+                                <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                                <a href="staff.html">الهيئة الإدارية</a>
+                                <span class="sep"><i class="fas fa-chevron-left"></i></span>
+                                <span class="current">${staff.name.split(' ').slice(-2).join(' ')}</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="staff-detail-highlights section-fade-up">
+                    <div class="container">
+                        <div class="staff-detail-highlights__grid">
+                            <div class="staff-detail-highlight">
+                                <span class="staff-detail-highlight__icon"><i class="fas fa-file-lines"></i></span>
+                                <div>
+                                    <strong class="staff-detail-highlight__value en-text">${staff.stats.publications}</strong>
+                                    <span class="staff-detail-highlight__label">منشور علمي</span>
+                                </div>
+                            </div>
+                            <div class="staff-detail-highlight">
+                                <span class="staff-detail-highlight__icon"><i class="fas fa-quote-right"></i></span>
+                                <div>
+                                    <strong class="staff-detail-highlight__value en-text">${staff.stats.citations.toLocaleString()}</strong>
+                                    <span class="staff-detail-highlight__label">استشهاد</span>
+                                </div>
+                            </div>
+                            <div class="staff-detail-highlight">
+                                <span class="staff-detail-highlight__icon"><i class="fas fa-chart-line"></i></span>
+                                <div>
+                                    <strong class="staff-detail-highlight__value en-text">${staff.stats.hIndex}</strong>
+                                    <span class="staff-detail-highlight__label">h-index</span>
+                                </div>
+                            </div>
+                            <div class="staff-detail-highlight">
+                                <span class="staff-detail-highlight__icon"><i class="fas fa-briefcase"></i></span>
+                                <div>
+                                    <strong class="staff-detail-highlight__value en-text">${staff.stats.experience}</strong>
+                                    <span class="staff-detail-highlight__label">سنة خبرة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="staff-detail-section">
+                    <div class="container">
+                        <div class="row g-4 g-xl-5">
+                            <div class="col-lg-8">
+                                <div class="staff-detail-panel section-fade-up">
+                                    <h3 class="staff-detail-panel__title"><i class="fas fa-user ms-2"></i>نبذة تعريفية</h3>
+                                    <p class="text-secondary mb-0" style="line-height: 1.9;">${staff.bio}</p>
+                                </div>
+
+                                <div class="staff-detail-panel section-fade-up">
+                                    <h3 class="staff-detail-panel__title"><i class="fas fa-graduation-cap ms-2"></i>المؤهلات العلمية</h3>
+                                    <div class="about-timeline">${educationHTML}</div>
+                                </div>
+
+                                <div class="staff-detail-panel section-fade-up">
+                                    <h3 class="staff-detail-panel__title"><i class="fas fa-briefcase ms-2"></i>الخبرة المهنية</h3>
+                                    <div class="about-timeline">${experienceHTML}</div>
+                                </div>
+
+                                <div class="staff-detail-panel section-fade-up">
+                                    <h3 class="staff-detail-panel__title"><i class="fas fa-book ms-2"></i>أبرز المنشورات</h3>
+                                    ${publicationsHTML}
+                                </div>
+
+                                <div class="staff-detail-panel section-fade-up">
+                                    <h3 class="staff-detail-panel__title"><i class="fas fa-trophy ms-2"></i>الجوائز والتكريمات</h3>
+                                    ${awardsHTML}
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="staff-detail-sidebar">
+                                    <div class="staff-detail-panel section-fade-up">
+                                        <div class="staff-detail-profile">
+                                            <div class="staff-detail-avatar"><i class="fas ${staff.icon}"></i></div>
+                                            <h5 class="staff-detail-profile__name">${staff.name}</h5>
+                                            <p class="staff-detail-profile__role">${staff.position}</p>
+                                            <p class="staff-detail-profile__college"><i class="fas fa-building-columns ms-1"></i> ${staff.college}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="staff-detail-panel staff-detail-contact-card section-fade-up">
+                                        <i class="fas fa-envelope fa-2x mb-3"></i>
+                                        <h5 class="staff-detail-contact-card__title">تواصل مع العضو</h5>
+                                        <p class="staff-detail-contact-card__desc">للاستفسارات الأكاديمية أو طلب موعد</p>
+                                        <a href="mailto:${staff.email}" class="btn btn-accent w-100 mb-2">إرسال بريد</a>
+                                        <a href="contact.html" class="btn btn-glass w-100 btn-sm">نموذج التواصل</a>
+                                    </div>
+
+                                    <div class="staff-detail-panel section-fade-up">
+                                        <h3 class="staff-detail-panel__title"><i class="fas fa-chart-bar ms-2"></i>المهارات</h3>
+                                        ${skillsHTML}
+                                    </div>
+
+                                    <div class="staff-detail-panel section-fade-up">
+                                        <h3 class="staff-detail-panel__title"><i class="fas fa-address-card ms-2"></i>معلومات التواصل</h3>
+                                        <div class="staff-detail-info-row">
+                                            <span class="staff-detail-info-row__label">البريد</span>
+                                            <span class="staff-detail-info-row__value en-text">${staff.email}</span>
+                                        </div>
+                                        <div class="staff-detail-info-row">
+                                            <span class="staff-detail-info-row__label">الهاتف</span>
+                                            <span class="staff-detail-info-row__value en-text">${staff.phone}</span>
+                                        </div>
+                                        <div class="staff-detail-info-row">
+                                            <span class="staff-detail-info-row__label">المكتب</span>
+                                            <span class="staff-detail-info-row__value">${staff.office}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="staff-detail-panel section-fade-up text-center">
+                                        <h3 class="staff-detail-panel__title justify-content-center"><i class="fas fa-share-nodes ms-2"></i>تابع على</h3>
+                                        <div class="staff-detail-social">
+                                            <a href="#" class="btn btn-glass" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="#" class="btn btn-glass" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="btn btn-glass" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                                            <a href="#" class="btn btn-glass" aria-label="Website"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>`;
+
+            document.getElementById('staffDetailContent').innerHTML = html;
+
+            if (typeof initScrollAnimations === 'function') initScrollAnimations();
+            if (typeof initBackToTop === 'function') initBackToTop();
+        });
+    </script>
+</body>
+</html>
