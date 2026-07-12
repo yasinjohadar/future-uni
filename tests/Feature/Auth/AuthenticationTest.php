@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\User;
+use App\Support\PanelHome;
+use Spatie\Permission\Models\Role;
 
 test('login screen can be rendered', function () {
     $response = $this->get('/login');
@@ -9,7 +11,10 @@ test('login screen can be rendered', function () {
 });
 
 test('users can authenticate using the login screen', function () {
-    $user = User::factory()->create();
+    Role::firstOrCreate(['name' => 'admin', 'guard_name' => 'web']);
+
+    $user = User::factory()->create(['is_active' => true]);
+    $user->assignRole('admin');
 
     $response = $this->post('/login', [
         'email' => $user->email,
@@ -17,7 +22,7 @@ test('users can authenticate using the login screen', function () {
     ]);
 
     $this->assertAuthenticated();
-    $response->assertRedirect(route('dashboard', absolute: false));
+    $response->assertRedirect(PanelHome::url($user));
 });
 
 test('users can not authenticate with invalid password', function () {

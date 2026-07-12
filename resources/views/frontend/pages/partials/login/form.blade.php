@@ -6,6 +6,8 @@
     $formSubtitle = $formSubtitle ?? 'أدخل بياناتك للوصول إلى حسابك';
     $brandingTitle = $brandingTitle ?? 'مرحباً بعودتك';
     $demoAdmin = config('demo-credentials.admin');
+    $demoStudent = config('demo-credentials.student');
+    $demoDoctor = config('demo-credentials.doctor');
     $showDemoAdminFill = ($showDemoAdminFill ?? false) && app()->environment('local');
 @endphp
 
@@ -168,19 +170,46 @@
                     </button>
 
                     @if($showDemoAdminFill)
-                        <div class="auth-demo-fill">
-                            <button type="button"
-                                    class="btn btn-auth-demo w-100"
-                                    id="fillAdminCredentials"
-                                    data-email="{{ $demoAdmin['email'] }}"
-                                    data-password="{{ $demoAdmin['password'] }}">
-                                <i class="fas fa-user-shield me-1"></i> تسجيل كأدمن (Seed)
-                            </button>
-                            <p class="auth-demo-fill__hint mb-0">
-                                <span dir="ltr">{{ $demoAdmin['email'] }}</span>
-                                <span class="mx-1">·</span>
-                                <span dir="ltr">{{ $demoAdmin['password'] }}</span>
-                            </p>
+                        <div class="auth-demo-fill d-flex flex-column gap-2">
+                            <div>
+                                <button type="button"
+                                        class="btn btn-auth-demo w-100 js-demo-login"
+                                        data-email="{{ $demoAdmin['email'] }}"
+                                        data-password="{{ $demoAdmin['password'] }}">
+                                    <i class="fas fa-user-shield me-1"></i> تسجيل كأدمن (Seed)
+                                </button>
+                                <p class="auth-demo-fill__hint mb-0">
+                                    <span dir="ltr">{{ $demoAdmin['email'] }}</span>
+                                    <span class="mx-1">·</span>
+                                    <span dir="ltr">{{ $demoAdmin['password'] }}</span>
+                                </p>
+                            </div>
+                            <div>
+                                <button type="button"
+                                        class="btn btn-auth-demo w-100 js-demo-login"
+                                        data-email="{{ $demoStudent['email'] }}"
+                                        data-password="{{ $demoStudent['password'] }}">
+                                    <i class="fas fa-user-graduate me-1"></i> تسجيل كطالب (Seed)
+                                </button>
+                                <p class="auth-demo-fill__hint mb-0">
+                                    <span dir="ltr">{{ $demoStudent['email'] }}</span>
+                                    <span class="mx-1">·</span>
+                                    <span dir="ltr">{{ $demoStudent['password'] }}</span>
+                                </p>
+                            </div>
+                            <div>
+                                <button type="button"
+                                        class="btn btn-auth-demo w-100 js-demo-login"
+                                        data-email="{{ $demoDoctor['email'] }}"
+                                        data-password="{{ $demoDoctor['password'] }}">
+                                    <i class="fas fa-user-md me-1"></i> تسجيل كدكتور (Seed)
+                                </button>
+                                <p class="auth-demo-fill__hint mb-0">
+                                    <span dir="ltr">{{ $demoDoctor['email'] }}</span>
+                                    <span class="mx-1">·</span>
+                                    <span dir="ltr">{{ $demoDoctor['password'] }}</span>
+                                </p>
+                            </div>
                         </div>
                     @endif
                 </form>

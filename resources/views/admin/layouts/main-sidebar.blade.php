@@ -109,6 +109,24 @@
                                 <li class="slide {{ request()->routeIs('admin.academic.programs.*') ? 'active' : '' }}">
                                     <a href="{{ route('admin.academic.programs.index') }}" class="side-menu__item">البرامج</a>
                                 </li>
+                                <li class="slide {{ request()->routeIs('admin.academic.terms.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.academic.terms.index') }}" class="side-menu__item">الفصول الدراسية</a>
+                                </li>
+                                <li class="slide {{ request()->routeIs('admin.academic.program-courses.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.academic.program-courses.index') }}" class="side-menu__item">مقررات البرامج</a>
+                                </li>
+                                <li class="slide {{ request()->routeIs('admin.academic.sections.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.academic.sections.index') }}" class="side-menu__item">الشعب</a>
+                                </li>
+                                <li class="slide {{ request()->routeIs('admin.academic.enrollments.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.academic.enrollments.index') }}" class="side-menu__item">التسجيلات</a>
+                                </li>
+                                <li class="slide {{ request()->routeIs('admin.academic.announcements.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.academic.announcements.index') }}" class="side-menu__item">الإعلانات</a>
+                                </li>
+                                <li class="slide {{ request()->routeIs('admin.academic.fees.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.academic.fees.index') }}" class="side-menu__item">الرسوم</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -144,6 +162,9 @@
                                 </li>
                                 <li class="slide {{ request()->routeIs('admin.library.settings.*') ? 'active' : '' }}">
                                     <a href="{{ route('admin.library.settings.edit') }}" class="side-menu__item">الإعدادات</a>
+                                </li>
+                                <li class="slide {{ request()->routeIs('admin.library.loans.*') ? 'active' : '' }}">
+                                    <a href="{{ route('admin.library.loans.index') }}" class="side-menu__item">الاستعارات</a>
                                 </li>
                             </ul>
                         </li>

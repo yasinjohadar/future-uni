@@ -68,6 +68,8 @@ class StudentsSeeder extends Seeder
                 'is_active' => true,
             ]);
 
+            $user->assignRole('student');
+
             Student::create([
                 'user_id' => $user->id,
                 'student_number' => $studentNumber,
@@ -78,6 +80,13 @@ class StudentsSeeder extends Seeder
 
             $created++;
         }
+
+        // Ensure existing student users have the student role
+        User::whereHas('student')->each(function (User $user) {
+            if (! $user->hasRole('student')) {
+                $user->assignRole('student');
+            }
+        });
 
         $this->command?->info("تم إنشاء {$created} طالب بنجاح.");
     }

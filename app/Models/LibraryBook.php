@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class LibraryBook extends Model
@@ -34,6 +35,11 @@ class LibraryBook extends Model
     public function category(): BelongsTo
     {
         return $this->belongsTo(LibraryCategory::class, 'library_category_id');
+    }
+
+    public function loans(): HasMany
+    {
+        return $this->hasMany(LibraryLoan::class);
     }
 
     public function scopeActive($query)

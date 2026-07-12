@@ -26,6 +26,9 @@ class DatabaseSeeder extends Seeder
             LibraryCategoriesSeeder::class,
             LibraryBooksSeeder::class,
             LibrarySettingsSeeder::class,
+            StudentsSeeder::class,
+            DoctorsSeeder::class,
+            StudentPortalSeeder::class,
         ]);
 
         User::factory()->create([

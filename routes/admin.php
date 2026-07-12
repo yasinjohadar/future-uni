@@ -31,6 +31,13 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\Academic\CollegeController;
 use App\Http\Controllers\Admin\Academic\DepartmentController;
 use App\Http\Controllers\Admin\Academic\ProgramController;
+use App\Http\Controllers\Admin\Academic\AcademicTermController;
+use App\Http\Controllers\Admin\Academic\ProgramCourseController;
+use App\Http\Controllers\Admin\Academic\CourseSectionController;
+use App\Http\Controllers\Admin\Academic\EnrollmentController;
+use App\Http\Controllers\Admin\Academic\AnnouncementController;
+use App\Http\Controllers\Admin\Academic\FeeInvoiceController;
+use App\Http\Controllers\Admin\Library\LibraryLoanController;
 use App\Http\Controllers\Admin\People\StaffMemberController;
 use App\Http\Controllers\Admin\Admission\AdmissionCycleController;
 use App\Http\Controllers\Admin\Admission\AdmissionApplicationController;
@@ -48,6 +55,10 @@ use App\Models\Accreditation;
 use App\Models\ResearchCenter;
 use App\Models\LibraryBook;
 use App\Models\LibraryCategory;
+use App\Models\AcademicTerm;
+use App\Models\CourseSection;
+use App\Models\FeeInvoice;
+use App\Models\LibraryLoan;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,6 +81,10 @@ Route::middleware(['auth', 'check.user.active'])->prefix('admin')->name('admin.'
     Route::bind('research_center', fn (string $value) => ResearchCenter::findOrFail($value));
     Route::bind('library_category', fn (string $value) => LibraryCategory::findOrFail($value));
     Route::bind('library_book', fn (string $value) => LibraryBook::findOrFail($value));
+    Route::bind('term', fn (string $value) => AcademicTerm::findOrFail($value));
+    Route::bind('course_section', fn (string $value) => CourseSection::findOrFail($value));
+    Route::bind('fee', fn (string $value) => FeeInvoice::findOrFail($value));
+    Route::bind('loan', fn (string $value) => LibraryLoan::findOrFail($value));
 
     // لوحة التحكم الرئيسية
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
@@ -107,6 +122,23 @@ Route::middleware(['auth', 'check.user.active'])->prefix('admin')->name('admin.'
 
         Route::resource('programs', ProgramController::class);
         Route::post('programs/{program}/toggle-active', [ProgramController::class, 'toggleActive'])->name('programs.toggle-active');
+
+        Route::resource('terms', AcademicTermController::class)->parameters(['terms' => 'term']);
+        Route::post('terms/{term}/mark-current', [AcademicTermController::class, 'markCurrent'])->name('terms.mark-current');
+
+        Route::resource('program-courses', ProgramCourseController::class);
+
+        Route::resource('sections', CourseSectionController::class)->parameters(['sections' => 'course_section']);
+
+        Route::resource('enrollments', EnrollmentController::class)->except(['edit', 'update']);
+        Route::put('enrollments/{enrollment}/grade', [EnrollmentController::class, 'updateGrade'])->name('enrollments.grade');
+        Route::post('enrollments/{enrollment}/publish-grade', [EnrollmentController::class, 'publishGrade'])->name('enrollments.publish-grade');
+        Route::post('enrollments/{enrollment}/unpublish-grade', [EnrollmentController::class, 'unpublishGrade'])->name('enrollments.unpublish-grade');
+
+        Route::resource('announcements', AnnouncementController::class);
+
+        Route::resource('fees', FeeInvoiceController::class)->parameters(['fees' => 'fee'])->except(['edit', 'update']);
+        Route::post('fees/{fee}/payments', [FeeInvoiceController::class, 'recordPayment'])->name('fees.payments');
     });
 
     Route::prefix('research')->name('research.')->group(function () {
@@ -123,6 +155,9 @@ Route::middleware(['auth', 'check.user.active'])->prefix('admin')->name('admin.'
 
         Route::get('settings', [LibrarySettingController::class, 'edit'])->name('settings.edit');
         Route::put('settings', [LibrarySettingController::class, 'update'])->name('settings.update');
+
+        Route::resource('loans', LibraryLoanController::class)->parameters(['loans' => 'loan'])->except(['edit', 'update', 'show']);
+        Route::post('loans/{loan}/return', [LibraryLoanController::class, 'returnBook'])->name('loans.return');
     });
 
     // People routes

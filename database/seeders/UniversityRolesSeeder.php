@@ -44,6 +44,12 @@ class UniversityRolesSeeder extends Seeder
                 'library-book-list', 'library-book-create', 'library-book-edit',
                 'library-settings-edit',
             ],
+            'student' => [
+                'dashboard-view',
+            ],
+            'doctor' => [
+                'dashboard-view',
+            ],
         ];
 
         foreach ($roles as $name => $permissions) {

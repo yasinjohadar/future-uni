@@ -41,19 +41,18 @@
         });
     }
 
-    var fillAdminBtn = document.getElementById('fillAdminCredentials');
-    if (fillAdminBtn) {
-        fillAdminBtn.addEventListener('click', function () {
+    document.querySelectorAll('.js-demo-login').forEach(function (btn) {
+        btn.addEventListener('click', function () {
             var emailInput = document.getElementById('email');
             var passwordInput = document.getElementById('password');
             var loginForm = document.getElementById('loginForm');
 
             if (emailInput) {
-                emailInput.value = fillAdminBtn.dataset.email || '';
+                emailInput.value = btn.dataset.email || '';
                 emailInput.parentElement.classList.add('focused');
             }
             if (passwordInput) {
-                passwordInput.value = fillAdminBtn.dataset.password || '';
+                passwordInput.value = btn.dataset.password || '';
                 passwordInput.parentElement.classList.add('focused');
             }
 
@@ -61,7 +60,7 @@
                 loginForm.requestSubmit();
             }
         });
-    }
+    });
 })();
 </script>
 @endpush

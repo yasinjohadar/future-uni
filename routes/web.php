@@ -27,9 +27,7 @@ Route::get('/serve/blog-image/{filename}', function (string $filename) {
 // الصفحة الرئيسية
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::redirect('/dashboard', '/admin')->name('dashboard');
 
 Route::middleware(['auth', 'check.user.active'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -39,6 +37,8 @@ Route::middleware(['auth', 'check.user.active'])->group(function () {
 
 require __DIR__.'/auth.php';
 require __DIR__.'/admin.php';
+require __DIR__.'/student.php';
+require __DIR__.'/doctor.php';
 require __DIR__.'/frontend.php';
 require __DIR__.'/portal.php';
 

@@ -1,16 +1,8 @@
 <?php
 
-use App\Http\Controllers\Frontend\Portal\PortalAuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('portal')->name('portal.')->group(function () {
-    Route::middleware('guest')->group(function () {
-        Route::get('login', [PortalAuthController::class, 'showLogin'])->name('login');
-        Route::post('login', [PortalAuthController::class, 'login'])->name('login.store');
-    });
-
-    Route::middleware('auth')->group(function () {
-        Route::get('/', [PortalAuthController::class, 'dashboard'])->name('dashboard');
-        Route::post('logout', [PortalAuthController::class, 'logout'])->name('logout');
-    });
-});
+Route::redirect('/portal', '/student');
+Route::redirect('/portal/login', '/login');
+Route::any('/portal/{any}', fn () => redirect('/student'))
+    ->where('any', '.*');

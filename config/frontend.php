@@ -20,9 +20,9 @@ return [
     ],
 
     'portal' => [
+        ['label' => 'بوابة الطالب', 'route' => 'login', 'icon' => 'fas fa-graduation-cap'],
+        ['label' => 'بوابة الدكتور', 'route' => 'login', 'icon' => 'fas fa-user-tie'],
         ['label' => 'المقررات', 'route' => 'courses', 'icon' => 'fas fa-book-open'],
-        ['label' => 'تسجيل الدخول', 'route' => 'login', 'icon' => 'fas fa-sign-in-alt'],
-        ['label' => 'التسجيل', 'route' => 'register', 'icon' => 'fas fa-user-plus'],
     ],
 
     'footer_quick_links' => [
